@@ -162,9 +162,7 @@
     
     [manager POST:@"http://192.168.1.109/thinkphp3.2/home/index/test" parameters:dic progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
         
         NSLog(@"%@", error.localizedDescription);
     }];
