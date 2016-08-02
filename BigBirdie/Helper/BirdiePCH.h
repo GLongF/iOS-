@@ -19,4 +19,6 @@
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 
+#define kWidth_Scale [UIScreen mainScreen].bounds.size.width / 414.0
+
 #endif /* BirdiePCH_h */

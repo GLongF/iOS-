@@ -38,45 +38,53 @@
     // 头像
     self.photoImage = [[UIImageView alloc] init];
     [self.photoImage setImage:[UIImage imageNamed:@"photo.png"]];
-//    self.photoImage.layer.cornerRadius = 50;
-//    self.photoImage.layer.masksToBounds = YES;
-//    self.photoImage.layer.borderWidth = 5;
+    self.photoImage.layer.cornerRadius = 50 * kWidth_Scale;
+    self.photoImage.layer.masksToBounds = YES;
+    self.photoImage.layer.borderWidth = 3 * kWidth_Scale;
     self.photoImage.layer.borderColor = [UIColor whiteColor].CGColor;
-
     [self addSubview:self.photoImage];
+    
     [self.photoImage mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(30);
-        make.left.mas_equalTo(weakSelf.backImage).mas_offset((465 / 3 )* 2);
-        make.right.mas_equalTo(weakSelf.backImage).mas_offset((-465 / 3) * 2);
+        make.top.mas_equalTo(weakSelf.backImage).mas_offset(20 * kWidth_Scale);
+        make.width.height.equalTo(@(100 * kWidth_Scale));
+        make.centerX.equalTo(weakSelf.backImage);
     }];
+    
     
     // 性别
     self.genderImage = [[UIImageView alloc] init];
+    [self.genderImage setImage:[UIImage imageNamed:@""]];
     [self.backImage addSubview:self.genderImage];
+    [self.genderImage mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+    }];
     
     
     // 名字
     self.nameLable = [[UILabel alloc] init];
     self.nameLable.textAlignment = NSTextAlignmentCenter;
     self.nameLable.text = @"懵逼的少女";
+    self.nameLable.font = [UIFont systemFontOfSize:16 * kWidth_Scale];
+    //self.nameLable.backgroundColor = [UIColor redColor];
     [self.backImage addSubview:self.nameLable];
     [self.nameLable mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(weakSelf.photoImage.mas_bottom);
-        make.left.mas_equalTo(weakSelf.photoImage);
-        make.size.mas_equalTo(CGSizeMake(100, 44));
+        make.top.mas_equalTo(weakSelf.photoImage.mas_bottom).offset(5 * kWidth_Scale);
+        make.centerX.equalTo(weakSelf.photoImage);
+        make.width.equalTo(@(150 * kWidth_Scale));
+        make.height.equalTo(@(20 * kWidth_Scale));
     }];
     
     
     // 关注
-    self.focusLableA = [[UILabel alloc] init];
-    self.focusLableA.text = @"关注";
-    [self.focusLableA setFont:[UIFont systemFontOfSize:LABLE_FONT]];
-    self.focusLableA.textAlignment = NSTextAlignmentCenter;
-    [self.backImage addSubview:self.focusLableA];
-    [self.focusLableA mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(weakSelf.nameLable.mas_bottom);
-        
-    }];
+//    self.focusLableA = [[UILabel alloc] init];
+//    self.focusLableA.text = @"关注";
+//    [self.focusLableA setFont:[UIFont systemFontOfSize:LABLE_FONT]];
+//    self.focusLableA.textAlignment = NSTextAlignmentCenter;
+//    [self.backImage addSubview:self.focusLableA];
+//    [self.focusLableA mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.mas_equalTo(weakSelf.nameLable.mas_bottom);
+//        
+//    }];
     
 //    self.focusLableB = [[UILabel alloc] initWithFrame:CGRectMake(60, self.nameLable.bottom + 20,LABLE_WIDTH, 30)];
 //    [self.focusLableB setFont:[UIFont systemFontOfSize:LABLE_FONT]];
