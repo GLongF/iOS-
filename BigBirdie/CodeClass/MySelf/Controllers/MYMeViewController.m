@@ -64,7 +64,7 @@
     self.tableView.backgroundColor = [UIColor blackColor];
     [self.view addSubview:self.tableView];
     
-    MYMeheaderView *headerView = [[MYMeheaderView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH , SCREEN_HEIGHT * 0.3)];
+    MYMeheaderView *headerView = [[MYMeheaderView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH , 800 / 3 * kWidth_Scale)];
     self.tableView.tableHeaderView = headerView;
 }
 
