@@ -11,4 +11,5 @@
 @interface MYMeCell : UITableViewCell
 @property (nonatomic,strong) UILabel *lable;
 @property (nonatomic,strong) UIImageView *img;
+@property (nonatomic,strong) UILabel *introduceLable;
 @end

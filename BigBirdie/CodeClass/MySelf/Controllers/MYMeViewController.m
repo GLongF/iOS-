@@ -69,7 +69,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 60;
+    return 150 / 3 * kWidth_Scale;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -89,7 +89,45 @@
     
     return cell;
 }
-
+// 页面跳转
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    switch (indexPath.row) {
+        case 1:
+            // code
+            break;
+            
+        case 2:
+            // code
+            break;
+        
+        case 3:
+            // code
+            break;
+        
+        case 4:
+            // cod
+             break;
+        
+        case 5:
+            // code
+            break;
+        
+        case 6:
+            // cod
+             break;
+        
+        case 7:
+            // code
+            break;
+        
+        case 8:
+            // cod
+             break;
+        
+        default:
+            break;
+    }
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

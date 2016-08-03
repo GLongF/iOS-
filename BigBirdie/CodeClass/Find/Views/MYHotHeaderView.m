@@ -22,6 +22,7 @@
         // 1.轮播图
         _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCROLL_HEIGHT)];
         [self addSubview:_scrollView];
+        
         _scrollView.backgroundColor = [UIColor whiteColor];
         self.backgroundColor = [UIColor yellowColor];
         

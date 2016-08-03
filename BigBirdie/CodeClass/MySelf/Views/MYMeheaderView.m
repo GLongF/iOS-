@@ -76,6 +76,7 @@
     self.nameLable = [[UILabel alloc] init];
     self.nameLable.textAlignment = NSTextAlignmentCenter;
     self.nameLable.text = @"懵逼的少女";
+    self.nameLable.textColor = [UIColor whiteColor];
     self.nameLable.font = [UIFont systemFontOfSize:16 * kWidth_Scale];
     [self.backImage addSubview:self.nameLable];
     [self.nameLable mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -136,8 +137,6 @@
     }];
 
     
-
-
 #warning 名字还没想好
     
     /******  大嘴币  ******/

@@ -19,12 +19,31 @@
 
 
 - (void)setUpView{
-   
+    __weak typeof (self) weakSelf = self;
     self.img = [[UIImageView alloc] initWithFrame:CGRectMake(20,15, 25, 25)];
     [self.contentView addSubview:self.img];
-    self.lable = [[UILabel alloc] initWithFrame:CGRectMake(self.img.left + 40, 5, 100, 44)];
+    [self.img mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(@(102 / 3 * kWidth_Scale));
+        make.centerY.equalTo(weakSelf.contentView);
+        make.width.height.equalTo(@(51 / 3 *kWidth_Scale));
+    }];
+    
+    self.lable = [[UILabel alloc] init];
     self.lable.textColor = [UIColor whiteColor];
+    self.lable.font = [UIFont systemFontOfSize:16 * kWidth_Scale];
     [self.contentView addSubview:self.lable];
+    [self.lable mas_makeConstraints:^(MASConstraintMaker *make) {
+        //make.left.equalTo(@(64 / 3 * kWidth_Scale));
+        make.left.mas_equalTo(weakSelf.img.mas_right).offset(64 / 3 * kWidth_Scale);
+        make.top.equalTo(@(54 / 3 * kWidth_Scale));
+        make.bottom.mas_equalTo(weakSelf.contentView).offset(- 54 / 3 * kWidth_Scale);
+        make.width.equalTo(@(80 * kWidth_Scale));
+        
+    }];
+    
+#warning 关于这个Lable再考虑考虑
+    self.introduceLable = [[UILabel alloc] init];
+    [self.contentView addSubview:self.introduceLable];
 }
 
 

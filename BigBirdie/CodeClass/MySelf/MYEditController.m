@@ -33,7 +33,6 @@
         imagePicker.allowsEditing = YES;
         imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
         imagePicker.delegate = weakSelf;
-
         [weakSelf presentViewController:imagePicker animated:YES completion:^{
             NSLog(@"打开相册");
         }];
