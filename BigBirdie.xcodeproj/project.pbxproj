@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04A6F6F11D52CB9D000E26DD /* MYHotCollectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6F6ED1D52CB9D000E26DD /* MYHotCollectCell.m */; };
+		04A6F6F21D52CB9D000E26DD /* MYHotCollectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A6F6EE1D52CB9D000E26DD /* MYHotCollectCell.xib */; };
+		04A6F6F31D52CB9D000E26DD /* MYHotHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6F6F01D52CB9D000E26DD /* MYHotHeaderView.m */; };
+		04A6F6F61D52DC52000E26DD /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6F6F51D52DC52000E26DD /* UIColor+Hex.m */; };
 		132DDD59A516CE46C3ED7A17 /* Pods_BigBirdie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A70F71BB0A7AF9835FEC67C /* Pods_BigBirdie.framework */; };
-		6F49DD8C1D48AAA30093DF40 /* PopView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F49DD8B1D48AAA30093DF40 /* PopView2.m */; };
 		6F4C05B41D51D4FE0019A870 /* MYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4C05AF1D51D4FE0019A870 /* MYLoginViewController.m */; };
 		6F4C05B51D51D4FE0019A870 /* MYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4C05B11D51D4FE0019A870 /* MYTabBar.m */; };
 		6F4C05B61D51D4FE0019A870 /* MYTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4C05B31D51D4FE0019A870 /* MYTabBarViewController.m */; };
@@ -61,12 +64,10 @@
 		6F7FD27F1D473B1B00451F58 /* MYHotController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7FD27E1D473B1B00451F58 /* MYHotController.m */; };
 		6F7FD2821D473B3600451F58 /* MYNewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7FD2811D473B3600451F58 /* MYNewController.m */; };
 		6F7FD2851D473B4700451F58 /* MYFouceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7FD2841D473B4700451F58 /* MYFouceController.m */; };
-		6F7FD28E1D47451800451F58 /* MYHotViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7FD28D1D47451800451F58 /* MYHotViewCell.m */; };
 		6F7FD2901D47525100451F58 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6F7FD28F1D47525100451F58 /* 1.jpg */; };
 		6F7FD2921D47525400451F58 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6F7FD2911D47525400451F58 /* 2.jpg */; };
 		6F7FD2941D47525700451F58 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6F7FD2931D47525700451F58 /* 3.jpg */; };
 		6F7FD2961D47525D00451F58 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6F7FD2951D47525D00451F58 /* 4.jpg */; };
-		6F7FD29C1D47584000451F58 /* MYHotHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7FD29B1D47584000451F58 /* MYHotHeaderView.m */; };
 		6F8C5BA31D49B714006B9980 /* MYMeheaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8C5BA01D49B713006B9980 /* MYMeheaderView.m */; };
 		6F8C5BA41D49B714006B9980 /* MYMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8C5BA21D49B713006B9980 /* MYMeCell.m */; };
 		6F8C5BA91D49B72E006B9980 /* MYEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8C5BA61D49B72E006B9980 /* MYEditController.m */; };
@@ -123,11 +124,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04A6F6EC1D52CB9D000E26DD /* MYHotCollectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYHotCollectCell.h; sourceTree = "<group>"; };
+		04A6F6ED1D52CB9D000E26DD /* MYHotCollectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYHotCollectCell.m; sourceTree = "<group>"; };
+		04A6F6EE1D52CB9D000E26DD /* MYHotCollectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYHotCollectCell.xib; sourceTree = "<group>"; };
+		04A6F6EF1D52CB9D000E26DD /* MYHotHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYHotHeaderView.h; sourceTree = "<group>"; };
+		04A6F6F01D52CB9D000E26DD /* MYHotHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYHotHeaderView.m; sourceTree = "<group>"; };
+		04A6F6F41D52DC52000E26DD /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		04A6F6F51D52DC52000E26DD /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		1B84AB1301579B37D131341E /* Pods-BigBirdie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigBirdie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BigBirdie/Pods-BigBirdie.debug.xcconfig"; sourceTree = "<group>"; };
 		1E2190FB79119F85681A6798 /* Pods-BigBirdie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigBirdie.release.xcconfig"; path = "Pods/Target Support Files/Pods-BigBirdie/Pods-BigBirdie.release.xcconfig"; sourceTree = "<group>"; };
 		5A70F71BB0A7AF9835FEC67C /* Pods_BigBirdie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BigBirdie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F49DD8A1D48AA9C0093DF40 /* PopView2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopView2.h; sourceTree = "<group>"; };
-		6F49DD8B1D48AAA30093DF40 /* PopView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopView2.m; sourceTree = "<group>"; };
 		6F4C05AE1D51D4FE0019A870 /* MYLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLoginViewController.h; sourceTree = "<group>"; };
 		6F4C05AF1D51D4FE0019A870 /* MYLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLoginViewController.m; sourceTree = "<group>"; };
 		6F4C05B01D51D4FE0019A870 /* MYTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTabBar.h; sourceTree = "<group>"; };
@@ -197,14 +203,10 @@
 		6F7FD2811D473B3600451F58 /* MYNewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNewController.m; sourceTree = "<group>"; };
 		6F7FD2831D473B4700451F58 /* MYFouceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFouceController.h; sourceTree = "<group>"; };
 		6F7FD2841D473B4700451F58 /* MYFouceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFouceController.m; sourceTree = "<group>"; };
-		6F7FD28C1D47451800451F58 /* MYHotViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYHotViewCell.h; sourceTree = "<group>"; };
-		6F7FD28D1D47451800451F58 /* MYHotViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYHotViewCell.m; sourceTree = "<group>"; };
 		6F7FD28F1D47525100451F58 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		6F7FD2911D47525400451F58 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		6F7FD2931D47525700451F58 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		6F7FD2951D47525D00451F58 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
-		6F7FD29A1D47584000451F58 /* MYHotHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYHotHeaderView.h; sourceTree = "<group>"; };
-		6F7FD29B1D47584000451F58 /* MYHotHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYHotHeaderView.m; sourceTree = "<group>"; };
 		6F8C5B9F1D49B713006B9980 /* MYMeheaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYMeheaderView.h; sourceTree = "<group>"; };
 		6F8C5BA01D49B713006B9980 /* MYMeheaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYMeheaderView.m; sourceTree = "<group>"; };
 		6F8C5BA11D49B713006B9980 /* MYMeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYMeCell.h; sourceTree = "<group>"; };
@@ -387,6 +389,8 @@
 		6F7FD2081D4709D500451F58 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				04A6F6F41D52DC52000E26DD /* UIColor+Hex.h */,
+				04A6F6F51D52DC52000E26DD /* UIColor+Hex.m */,
 				6F7FD2271D470CC800451F58 /* BirdiePCH.h */,
 				6F7FD27A1D473A1A00451F58 /* UIView+MYExtension.h */,
 				6F7FD27B1D473A1A00451F58 /* UIView+MYExtension.m */,
@@ -445,12 +449,11 @@
 		6F7FD20E1D470A8900451F58 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6F7FD28C1D47451800451F58 /* MYHotViewCell.h */,
-				6F7FD28D1D47451800451F58 /* MYHotViewCell.m */,
-				6F7FD29A1D47584000451F58 /* MYHotHeaderView.h */,
-				6F7FD29B1D47584000451F58 /* MYHotHeaderView.m */,
-				6F49DD8A1D48AA9C0093DF40 /* PopView2.h */,
-				6F49DD8B1D48AAA30093DF40 /* PopView2.m */,
+				04A6F6EC1D52CB9D000E26DD /* MYHotCollectCell.h */,
+				04A6F6ED1D52CB9D000E26DD /* MYHotCollectCell.m */,
+				04A6F6EE1D52CB9D000E26DD /* MYHotCollectCell.xib */,
+				04A6F6EF1D52CB9D000E26DD /* MYHotHeaderView.h */,
+				04A6F6F01D52CB9D000E26DD /* MYHotHeaderView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -792,6 +795,7 @@
 				6F7FD25F1D470DF300451F58 /* shoucang@2x.png in Resources */,
 				6F7FD1D71D4708E700451F58 /* Main.storyboard in Resources */,
 				6FB9C31B1D503CC900FCD40E /* photo@3x.png in Resources */,
+				04A6F6F21D52CB9D000E26DD /* MYHotCollectCell.xib in Resources */,
 				6F7FD26B1D470DF300451F58 /* yijian@2x.png in Resources */,
 				6FFD9CD81D4F32B600848282 /* acount@2x.png in Resources */,
 				6F7FD2651D470DF300451F58 /* tingzhibofang@2x.png in Resources */,
@@ -871,22 +875,22 @@
 				6F7FD27C1D473A1A00451F58 /* UIView+MYExtension.m in Sources */,
 				6F7FD1D41D4708E700451F58 /* ViewController.m in Sources */,
 				6F8C5BB01D49B7E3006B9980 /* MYButton.m in Sources */,
-				6F49DD8C1D48AAA30093DF40 /* PopView2.m in Sources */,
 				6F8C5BAA1D49B72E006B9980 /* MYPhotoController.m in Sources */,
 				6F7FD1CE1D4708E700451F58 /* main.m in Sources */,
 				6FFD9CBB1D4F176D00848282 /* WaveView.m in Sources */,
 				6F4C05B41D51D4FE0019A870 /* MYLoginViewController.m in Sources */,
 				6F7FD2061D47096900451F58 /* AppDelegate.m in Sources */,
 				6F8C5BA31D49B714006B9980 /* MYMeheaderView.m in Sources */,
-				6F7FD29C1D47584000451F58 /* MYHotHeaderView.m in Sources */,
 				6FFD9CBE1D4F17E800848282 /* MYVoiceViewController.m in Sources */,
 				6F4C05B51D51D4FE0019A870 /* MYTabBar.m in Sources */,
-				6F7FD28E1D47451800451F58 /* MYHotViewCell.m in Sources */,
+				04A6F6F31D52CB9D000E26DD /* MYHotHeaderView.m in Sources */,
 				6F7FD27F1D473B1B00451F58 /* MYHotController.m in Sources */,
+				04A6F6F11D52CB9D000E26DD /* MYHotCollectCell.m in Sources */,
 				6F8C5BA41D49B714006B9980 /* MYMeCell.m in Sources */,
 				6F8C5BAD1D49B792006B9980 /* MYMeViewController.m in Sources */,
 				6F8C5BA91D49B72E006B9980 /* MYEditController.m in Sources */,
 				6F7FD2201D470B6C00451F58 /* MYFindControlle.m in Sources */,
+				04A6F6F61D52DC52000E26DD /* UIColor+Hex.m in Sources */,
 				6F7FD2821D473B3600451F58 /* MYNewController.m in Sources */,
 				6F7FD2851D473B4700451F58 /* MYFouceController.m in Sources */,
 			);

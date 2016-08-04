@@ -1,40 +1,46 @@
 //
-//  MYHotHeaderView.m
+//  MYHotHeadeView.m
 //  BigBirdie
 //
-//  Created by 郭龙飞 on 16/7/26.
+//  Created by mac on 16/8/3.
 //  Copyright © 2016年 郭龙飞. All rights reserved.
 //
 
 #import "MYHotHeaderView.h"
+#import "SDCycleScrollView.h"
 
+@interface MYHotHeaderView () <SDCycleScrollViewDelegate>
 
-
-@interface MYHotHeaderView ()
-
-
+@property (nonatomic, strong) SDCycleScrollView * bannerView;
 
 @end
 
 @implementation MYHotHeaderView
-- (instancetype)initWithFrame:(CGRect)frame {
-    if (self = [super initWithFrame:frame]) {
-        // 1.轮播图
-        _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCROLL_HEIGHT)];
-        [self addSubview:_scrollView];
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
         
-        _scrollView.backgroundColor = [UIColor whiteColor];
-        self.backgroundColor = [UIColor yellowColor];
-        
-        // 2.排行榜背景
-        _backImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, SCROLL_HEIGHT + 10, SCREEN_WIDTH, IMAGE_HEIGHT)];
-        [_backImage setImage:[UIImage imageNamed:@"4.jpg"]];
-        [self addSubview:_backImage];
-        
-                    
+        [self createBannerViewWithFrame:frame];
     }
     return self;
 }
 
+- (void)createBannerViewWithFrame:(CGRect)frame {
+    
+    _bannerView = [SDCycleScrollView cycleScrollViewWithFrame:frame delegate:self placeholderImage:nil];
+    [self addSubview:_bannerView];
+}
+                   
+- (void)reloadWithImageUrlArray:(NSArray <NSString *>*)array {
+    
+    _bannerView.imageURLStringsGroup = array;
+}
+
+- (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index {
+    
+    self.didSelectBannerWithIndex(index);
+}
 
 @end
