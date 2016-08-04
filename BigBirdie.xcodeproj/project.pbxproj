@@ -12,6 +12,13 @@
 		04A6F6F31D52CB9D000E26DD /* MYHotHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6F6F01D52CB9D000E26DD /* MYHotHeaderView.m */; };
 		04A6F6F61D52DC52000E26DD /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6F6F51D52DC52000E26DD /* UIColor+Hex.m */; };
 		132DDD59A516CE46C3ED7A17 /* Pods_BigBirdie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A70F71BB0A7AF9835FEC67C /* Pods_BigBirdie.framework */; };
+		6F37CCF71D52E1C4004E0BB0 /* UIColor+Magic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37CCE61D52E1C4004E0BB0 /* UIColor+Magic.m */; };
+		6F37CCF81D52E1C4004E0BB0 /* UIScrollView+Magic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37CCE81D52E1C4004E0BB0 /* UIScrollView+Magic.m */; };
+		6F37CCF91D52E1C4004E0BB0 /* UIViewController+Magic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37CCEA1D52E1C4004E0BB0 /* UIViewController+Magic.m */; };
+		6F37CCFA1D52E1C4004E0BB0 /* VTContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37CCED1D52E1C4004E0BB0 /* VTContentView.m */; };
+		6F37CCFB1D52E1C4004E0BB0 /* VTMagicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37CCF11D52E1C4004E0BB0 /* VTMagicController.m */; };
+		6F37CCFC1D52E1C4004E0BB0 /* VTMagicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37CCF41D52E1C4004E0BB0 /* VTMagicView.m */; };
+		6F37CCFD1D52E1C4004E0BB0 /* VTMenuBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37CCF61D52E1C4004E0BB0 /* VTMenuBar.m */; };
 		6F4C05B41D51D4FE0019A870 /* MYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4C05AF1D51D4FE0019A870 /* MYLoginViewController.m */; };
 		6F4C05B51D51D4FE0019A870 /* MYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4C05B11D51D4FE0019A870 /* MYTabBar.m */; };
 		6F4C05B61D51D4FE0019A870 /* MYTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4C05B31D51D4FE0019A870 /* MYTabBarViewController.m */; };
@@ -134,6 +141,24 @@
 		1B84AB1301579B37D131341E /* Pods-BigBirdie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigBirdie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BigBirdie/Pods-BigBirdie.debug.xcconfig"; sourceTree = "<group>"; };
 		1E2190FB79119F85681A6798 /* Pods-BigBirdie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigBirdie.release.xcconfig"; path = "Pods/Target Support Files/Pods-BigBirdie/Pods-BigBirdie.release.xcconfig"; sourceTree = "<group>"; };
 		5A70F71BB0A7AF9835FEC67C /* Pods_BigBirdie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BigBirdie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F37CCE51D52E1C4004E0BB0 /* UIColor+Magic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Magic.h"; sourceTree = "<group>"; };
+		6F37CCE61D52E1C4004E0BB0 /* UIColor+Magic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Magic.m"; sourceTree = "<group>"; };
+		6F37CCE71D52E1C4004E0BB0 /* UIScrollView+Magic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Magic.h"; sourceTree = "<group>"; };
+		6F37CCE81D52E1C4004E0BB0 /* UIScrollView+Magic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Magic.m"; sourceTree = "<group>"; };
+		6F37CCE91D52E1C4004E0BB0 /* UIViewController+Magic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Magic.h"; sourceTree = "<group>"; };
+		6F37CCEA1D52E1C4004E0BB0 /* UIViewController+Magic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Magic.m"; sourceTree = "<group>"; };
+		6F37CCEB1D52E1C4004E0BB0 /* VTCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTCommon.h; sourceTree = "<group>"; };
+		6F37CCEC1D52E1C4004E0BB0 /* VTContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTContentView.h; sourceTree = "<group>"; };
+		6F37CCED1D52E1C4004E0BB0 /* VTContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTContentView.m; sourceTree = "<group>"; };
+		6F37CCEE1D52E1C4004E0BB0 /* VTEnumType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTEnumType.h; sourceTree = "<group>"; };
+		6F37CCEF1D52E1C4004E0BB0 /* VTMagic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTMagic.h; sourceTree = "<group>"; };
+		6F37CCF01D52E1C4004E0BB0 /* VTMagicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTMagicController.h; sourceTree = "<group>"; };
+		6F37CCF11D52E1C4004E0BB0 /* VTMagicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTMagicController.m; sourceTree = "<group>"; };
+		6F37CCF21D52E1C4004E0BB0 /* VTMagicProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTMagicProtocol.h; sourceTree = "<group>"; };
+		6F37CCF31D52E1C4004E0BB0 /* VTMagicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTMagicView.h; sourceTree = "<group>"; };
+		6F37CCF41D52E1C4004E0BB0 /* VTMagicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTMagicView.m; sourceTree = "<group>"; };
+		6F37CCF51D52E1C4004E0BB0 /* VTMenuBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTMenuBar.h; sourceTree = "<group>"; };
+		6F37CCF61D52E1C4004E0BB0 /* VTMenuBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTMenuBar.m; sourceTree = "<group>"; };
 		6F4C05AE1D51D4FE0019A870 /* MYLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLoginViewController.h; sourceTree = "<group>"; };
 		6F4C05AF1D51D4FE0019A870 /* MYLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLoginViewController.m; sourceTree = "<group>"; };
 		6F4C05B01D51D4FE0019A870 /* MYTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTabBar.h; sourceTree = "<group>"; };
@@ -279,6 +304,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F37CCE41D52E1C4004E0BB0 /* VTMagic */ = {
+			isa = PBXGroup;
+			children = (
+				6F37CCE51D52E1C4004E0BB0 /* UIColor+Magic.h */,
+				6F37CCE61D52E1C4004E0BB0 /* UIColor+Magic.m */,
+				6F37CCE71D52E1C4004E0BB0 /* UIScrollView+Magic.h */,
+				6F37CCE81D52E1C4004E0BB0 /* UIScrollView+Magic.m */,
+				6F37CCE91D52E1C4004E0BB0 /* UIViewController+Magic.h */,
+				6F37CCEA1D52E1C4004E0BB0 /* UIViewController+Magic.m */,
+				6F37CCEB1D52E1C4004E0BB0 /* VTCommon.h */,
+				6F37CCEC1D52E1C4004E0BB0 /* VTContentView.h */,
+				6F37CCED1D52E1C4004E0BB0 /* VTContentView.m */,
+				6F37CCEE1D52E1C4004E0BB0 /* VTEnumType.h */,
+				6F37CCEF1D52E1C4004E0BB0 /* VTMagic.h */,
+				6F37CCF01D52E1C4004E0BB0 /* VTMagicController.h */,
+				6F37CCF11D52E1C4004E0BB0 /* VTMagicController.m */,
+				6F37CCF21D52E1C4004E0BB0 /* VTMagicProtocol.h */,
+				6F37CCF31D52E1C4004E0BB0 /* VTMagicView.h */,
+				6F37CCF41D52E1C4004E0BB0 /* VTMagicView.m */,
+				6F37CCF51D52E1C4004E0BB0 /* VTMenuBar.h */,
+				6F37CCF61D52E1C4004E0BB0 /* VTMenuBar.m */,
+			);
+			path = VTMagic;
+			sourceTree = "<group>";
+		};
 		6F4C05AD1D51D4FE0019A870 /* Root */ = {
 			isa = PBXGroup;
 			children = (
@@ -403,6 +453,7 @@
 		6F7FD2091D4709D500451F58 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				6F37CCE41D52E1C4004E0BB0 /* VTMagic */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -874,8 +925,10 @@
 				6F4C05B61D51D4FE0019A870 /* MYTabBarViewController.m in Sources */,
 				6F7FD27C1D473A1A00451F58 /* UIView+MYExtension.m in Sources */,
 				6F7FD1D41D4708E700451F58 /* ViewController.m in Sources */,
+				6F37CCF81D52E1C4004E0BB0 /* UIScrollView+Magic.m in Sources */,
 				6F8C5BB01D49B7E3006B9980 /* MYButton.m in Sources */,
 				6F8C5BAA1D49B72E006B9980 /* MYPhotoController.m in Sources */,
+				6F37CCFA1D52E1C4004E0BB0 /* VTContentView.m in Sources */,
 				6F7FD1CE1D4708E700451F58 /* main.m in Sources */,
 				6FFD9CBB1D4F176D00848282 /* WaveView.m in Sources */,
 				6F4C05B41D51D4FE0019A870 /* MYLoginViewController.m in Sources */,
@@ -884,13 +937,18 @@
 				6FFD9CBE1D4F17E800848282 /* MYVoiceViewController.m in Sources */,
 				6F4C05B51D51D4FE0019A870 /* MYTabBar.m in Sources */,
 				04A6F6F31D52CB9D000E26DD /* MYHotHeaderView.m in Sources */,
+				6F37CCF71D52E1C4004E0BB0 /* UIColor+Magic.m in Sources */,
 				6F7FD27F1D473B1B00451F58 /* MYHotController.m in Sources */,
 				04A6F6F11D52CB9D000E26DD /* MYHotCollectCell.m in Sources */,
+				6F37CCFD1D52E1C4004E0BB0 /* VTMenuBar.m in Sources */,
+				6F37CCFC1D52E1C4004E0BB0 /* VTMagicView.m in Sources */,
 				6F8C5BA41D49B714006B9980 /* MYMeCell.m in Sources */,
 				6F8C5BAD1D49B792006B9980 /* MYMeViewController.m in Sources */,
 				6F8C5BA91D49B72E006B9980 /* MYEditController.m in Sources */,
+				6F37CCF91D52E1C4004E0BB0 /* UIViewController+Magic.m in Sources */,
 				6F7FD2201D470B6C00451F58 /* MYFindControlle.m in Sources */,
 				04A6F6F61D52DC52000E26DD /* UIColor+Hex.m in Sources */,
+				6F37CCFB1D52E1C4004E0BB0 /* VTMagicController.m in Sources */,
 				6F7FD2821D473B3600451F58 /* MYNewController.m in Sources */,
 				6F7FD2851D473B4700451F58 /* MYFouceController.m in Sources */,
 			);

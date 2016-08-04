@@ -92,7 +92,8 @@
     self.funsLableA.text = @"粉丝";
     [self.funsLableA setFont:[UIFont systemFontOfSize:LABLEA_FONT * kWidth_Scale]];
     self.funsLableA.textAlignment = NSTextAlignmentCenter;
-    //self.funsLableA.backgroundColor = [UIColor redColor];
+    
+    self.funsLableA.textColor = [UIColor colorWithHexString:@"4d4b4b"];
     [self.backImage addSubview:self.funsLableA];
     [self.funsLableA mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(weakSelf.nameLable.mas_bottom).offset(20 * kWidth_Scale);
