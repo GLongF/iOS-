@@ -60,6 +60,9 @@
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource =self;
+    
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+    
     [self.tableView registerClass:[MYMeCell class] forCellReuseIdentifier:@"cell"];
     self.tableView.backgroundColor = [UIColor blackColor];
     [self.view addSubview:self.tableView];
@@ -86,7 +89,6 @@
     
     cell.selectedBackgroundView = [[UIView alloc] initWithFrame:cell.frame];
     cell.selectedBackgroundView.backgroundColor = [UIColor colorWithRed:35 green:35 blue:35 alpha:0.1];
-    
     return cell;
 }
 // 页面跳转

@@ -13,12 +13,6 @@
 #define LABLEB_FONT 13.f
 
 @interface MYMeheaderView ()
-// 关注
-@property(nonatomic,strong) UILabel *focusLableA;
-// 粉丝
-@property(nonatomic,strong) UILabel *funsLableA;
-// 点赞
-@property(nonatomic,strong) UILabel *praiseLableA;
 // 间隔线
 @property(nonatomic,strong) UILabel *lable1;
 @property(nonatomic,strong) UILabel *lable2;
@@ -47,8 +41,8 @@
     
     
     // 头像
-    self.photoImage = [[UIImageView alloc] init];
-    [self.photoImage setImage:[UIImage imageNamed:@"photo.png"]];
+    self.photoImage = [[UIButton alloc] init];
+    [self.photoImage setImage:[UIImage imageNamed:@"photo.png"] forState:UIControlStateNormal];
     self.photoImage.layer.cornerRadius = 50 * kWidth_Scale;
     self.photoImage.layer.masksToBounds = YES;
     self.photoImage.layer.borderWidth = 3 * kWidth_Scale;
@@ -88,14 +82,13 @@
     
     
     /******  粉丝  ******/
-    self.funsLableA = [[UILabel alloc] init];
-    self.funsLableA.text = @"粉丝";
-    [self.funsLableA setFont:[UIFont systemFontOfSize:LABLEA_FONT * kWidth_Scale]];
-    self.funsLableA.textAlignment = NSTextAlignmentCenter;
-    
-    self.funsLableA.textColor = [UIColor colorWithHexString:@"4d4b4b"];
-    [self.backImage addSubview:self.funsLableA];
-    [self.funsLableA mas_makeConstraints:^(MASConstraintMaker *make) {
+    self.funsButton = [[UIButton alloc] init];
+    [self.funsButton setTitle:@"粉丝" forState:UIControlStateNormal];
+    self.funsButton.titleLabel.font = [UIFont systemFontOfSize:LABLEA_FONT * kWidth_Scale];
+    self.funsButton.titleLabel.textAlignment = NSTextAlignmentCenter;
+    [self.funsButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.backImage addSubview:self.funsButton];
+    [self.funsButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(weakSelf.nameLable.mas_bottom).offset(20 * kWidth_Scale);
         make.height.equalTo(@(42 / 3 * kWidth_Scale));
         make.centerX.equalTo(weakSelf.photoImage);
@@ -108,22 +101,23 @@
     self.funsLableB.textAlignment = NSTextAlignmentCenter;
     [self.backImage addSubview:self.funsLableB];
     [self.funsLableB mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(weakSelf.funsLableA.mas_bottom).offset(10 * kWidth_Scale);
-        make.centerX.equalTo(weakSelf.funsLableA);
+        make.top.mas_equalTo(weakSelf.funsButton.mas_bottom).offset(10 * kWidth_Scale);
+        make.centerX.equalTo(weakSelf.funsButton);
         make.height.equalTo(@(42 / 3 * kWidth_Scale));
     }];
     
     
     /******  关注  ******/
-    self.focusLableA = [[UILabel alloc] init];
-    self.focusLableA.text = @"关注";
-    [self.focusLableA setFont:[UIFont systemFontOfSize: LABLEA_FONT * kWidth_Scale]];
-    self.focusLableA.textAlignment = NSTextAlignmentCenter;
-    [self.backImage addSubview:self.focusLableA];
-    [self.focusLableA mas_makeConstraints:^(MASConstraintMaker *make) {
+    self.focusButton = [[UIButton alloc] init];
+    [self.focusButton setTitle:@"关注" forState:UIControlStateNormal];
+    self.focusButton.titleLabel.font = [UIFont systemFontOfSize:LABLEA_FONT * kWidth_Scale];
+    self.focusButton.titleLabel.textAlignment = NSTextAlignmentCenter;
+    [self.focusButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.backImage addSubview:self.focusButton];
+    [self.focusButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(weakSelf.nameLable.mas_bottom).offset(20 * kWidth_Scale);
         make.height.equalTo(@(42 / 3 * kWidth_Scale));
-        make.right.mas_equalTo(weakSelf.funsLableA.mas_left).offset( - 60 * kWidth_Scale);
+        make.right.mas_equalTo(weakSelf.funsButton.mas_left).offset( - 60 * kWidth_Scale);
     }];
     
     self.focusLableB = [[UILabel alloc] init];
@@ -132,8 +126,8 @@
     self.focusLableB.text = @"10万";
     [self.backImage addSubview:self.focusLableB];
     [self.focusLableB mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(weakSelf.funsLableA.mas_bottom).offset(10 * kWidth_Scale);
-        make.centerX.equalTo(weakSelf.focusLableA);
+        make.top.mas_equalTo(weakSelf.funsButton.mas_bottom).offset(10 * kWidth_Scale);
+        make.centerX.equalTo(weakSelf.focusButton);
         make.height.equalTo(@(42 / 3 * kWidth_Scale));
     }];
 
@@ -141,15 +135,16 @@
 #warning 名字还没想好
     
     /******  大嘴币  ******/
-    self.praiseLableA = [[UILabel alloc] init];
-    self.praiseLableA.text = @"大嘴币";
-    [self.praiseLableA setFont:[UIFont systemFontOfSize:LABLEA_FONT * kWidth_Scale]];
-    self.praiseLableA.textAlignment = NSTextAlignmentCenter;
-    [self.backImage addSubview:self.praiseLableA];
-    [self.praiseLableA mas_makeConstraints:^(MASConstraintMaker *make) {
+    self.praiseButton = [[UIButton alloc] init];
+    [self.praiseButton setTitle:@"大嘴币" forState:UIControlStateNormal];
+    self.praiseButton.titleLabel.font = [UIFont systemFontOfSize:LABLEA_FONT * kWidth_Scale];
+    self.praiseButton.titleLabel.textAlignment = NSTextAlignmentCenter;
+    [self.praiseButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.backImage addSubview:self.praiseButton];
+    [self.praiseButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(weakSelf.nameLable.mas_bottom).offset(20 * kWidth_Scale);
         make.height.equalTo(@(42 / 3 * kWidth_Scale));
-        make.left.mas_equalTo(weakSelf.funsLableA.mas_right).offset(60 * kWidth_Scale);
+        make.left.mas_equalTo(weakSelf.funsButton.mas_right).offset(60 * kWidth_Scale);
     }];
 
     
@@ -159,8 +154,8 @@
     self.praiseLableB.textAlignment = NSTextAlignmentCenter;
     [self.backImage addSubview:self.praiseLableB];
     [self.praiseLableB mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(weakSelf.funsLableA.mas_bottom).offset(10 * kWidth_Scale);
-        make.centerX.equalTo(weakSelf.praiseLableA);
+        make.top.mas_equalTo(weakSelf.funsButton.mas_bottom).offset(10 * kWidth_Scale);
+        make.centerX.equalTo(weakSelf.praiseButton);
         make.height.equalTo(@(42 / 3 * kWidth_Scale));
     }];
 
@@ -171,7 +166,7 @@
     self.lable1.alpha = 0.6;
     [self.backImage addSubview:self.lable1];
     [self.lable1 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(weakSelf.funsLableA.mas_top).offset(5 * kWidth_Scale);
+        make.top.mas_equalTo(weakSelf.funsButton.mas_top).offset(5 * kWidth_Scale);
         make.left.equalTo(@(470 / 3 * kWidth_Scale));
         make.width.equalTo(@(2 * kWidth_Scale));
         make.height.equalTo(@(30 * kWidth_Scale));
@@ -183,12 +178,21 @@
     self.lable2.alpha = 0.6;
     [self.backImage addSubview:self.lable2];
     [self.lable2 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(weakSelf.funsLableA.mas_top).offset(5 * kWidth_Scale);
+        make.top.mas_equalTo(weakSelf.funsButton.mas_top).offset(5 * kWidth_Scale);
         make.right.mas_equalTo(weakSelf.backImage.right).offset(- 470 / 3 * kWidth_Scale);
         make.width.equalTo(@(2 * kWidth_Scale));
         make.height.equalTo(@(30 * kWidth_Scale));
     }];
     
 }
+
+- (void)addButton:(UIButton *)button Title:(NSString *)title font:(CGFloat)font  colorString:(NSString *)colorStr {
+    [button setTitle:title forState:UIControlStateNormal];
+    button.titleLabel.font = [UIFont systemFontOfSize:font];
+    button.titleLabel.textAlignment = NSTextAlignmentCenter;
+    [button setTitleColor:[UIColor colorWithHexString:colorStr] forState:UIControlStateNormal];
+
+}
+
 
 @end

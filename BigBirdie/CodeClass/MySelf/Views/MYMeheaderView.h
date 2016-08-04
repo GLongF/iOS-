@@ -12,7 +12,7 @@
 // 背景图片
 @property(nonatomic,strong) UIImageView *backImage;
 // 头像
-@property(nonatomic,strong) UIImageView *photoImage;
+@property(nonatomic,strong) UIButton *photoImage;
 // 姓名
 @property(nonatomic,strong) UILabel *nameLable;
 // 性别
@@ -21,6 +21,15 @@
 #warning 将来会有变动
 // 等级
 @property(nonatomic,strong) UILabel *level;
+
+// 关注
+@property(nonatomic,strong) UIButton *focusButton;
+// 粉丝
+@property(nonatomic,strong) UIButton *funsButton;
+// 点赞
+@property(nonatomic,strong) UIButton *praiseButton;
+
+
 // 关注
 @property(nonatomic,strong) UILabel *focusLableB;
 // 粉丝
