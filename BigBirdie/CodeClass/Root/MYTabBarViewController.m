@@ -54,6 +54,7 @@
 {
     // 设置文字和图片
     UINavigationController *naC = [[UINavigationController alloc] initWithRootViewController:vc];
+    naC.navigationBar.translucent = NO;
     vc.tabBarItem.title = title;
     vc.tabBarItem.image = [UIImage imageNamed:image];
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];

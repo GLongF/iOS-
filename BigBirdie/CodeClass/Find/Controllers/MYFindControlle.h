@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VTMagicController.h"
 
-@interface MYFindControlle : UIViewController
+@interface MYFindControlle : VTMagicController
 
 @end
