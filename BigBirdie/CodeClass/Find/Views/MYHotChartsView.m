@@ -9,7 +9,7 @@
 #import "MYHotChartsView.h"
 #import <pop/pop.h>
 
-@interface MYHotChartsView () <UITableViewDelegate, UITableViewDataSource>
+@interface MYHotChartsView () <UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate>
 
 @property (nonatomic, strong)UIImageView * topImageView;
 @property (nonatomic, strong)UITableView * tableView;
@@ -17,6 +17,8 @@
 @property (nonatomic, strong)UIButton * lookMoreBtn;
 @property (nonatomic, assign)BOOL isShow;
 //@property ()
+
+@property (nonatomic, strong)UIVisualEffectView * backView;
 
 @end
 
@@ -55,7 +57,7 @@
         self.isShow = NO;
         [self createLabel];
         [self createTableview];
-//        [self addTap];
+        [self addTap];
         [self addPan];
     }
     return self;
@@ -112,6 +114,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     UITableViewCell * cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:@"Id"];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 
@@ -120,11 +123,12 @@
     NSLog(@"点击了cell");
 }
 
-//- (void)addTap {
-//    
-//    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideOrShow)];
-//    [self addGestureRecognizer:tap];
-//}
+- (void)addTap {
+    
+    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideOrShow)];
+    tap.delegate = self;
+    [self addGestureRecognizer:tap];
+}
 - (void)addPan {
     
     UIPanGestureRecognizer * pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(move:)];
@@ -180,6 +184,7 @@
         animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
         [self pop_addAnimation:animation forKey:@"popShow"];
         self.isShow = YES;
+        [self.superview insertSubview:self.backView belowSubview:self];
     }else {
     
         POPBasicAnimation * animation = [POPBasicAnimation animationWithPropertyNamed:kPOPViewFrame];
@@ -189,7 +194,17 @@
         animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
         [self pop_addAnimation:animation forKey:@"popHide"];
         self.isShow = NO;
+        [self.backView removeFromSuperview];
     }
+}
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+    
+    if ([NSStringFromClass([touch.view class]) isEqualToString:@"UITableViewCellContentView"]) {
+        
+        return NO;
+    }
+    return YES;
 }
 
 
@@ -202,6 +217,7 @@
     animation.springBounciness = 12;
     [self pop_addAnimation:animation forKey:@"popHide"];
     self.isShow = NO;
+    [self.backView removeFromSuperview];
 }
 
 - (void)show {
@@ -212,5 +228,21 @@
     animation.springBounciness = 12;
     [self pop_addAnimation:animation forKey:@"popShow"];
     self.isShow = YES;
+    [self.superview insertSubview:self.backView belowSubview:self];
 }
+
+- (UIVisualEffectView *)backView {
+    
+    if (!_backView) {
+        
+        UIBlurEffect *blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
+        _backView = [[UIVisualEffectView alloc] initWithEffect:blur];
+        _backView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+        UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hide)];
+        [_backView addGestureRecognizer:tap];
+    }
+    return _backView;
+}
+
+
 @end
