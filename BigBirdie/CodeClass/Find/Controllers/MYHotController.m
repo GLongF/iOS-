@@ -9,6 +9,7 @@
 #import "MYHotController.h"
 #import "MYHotHeaderView.h"
 #import "MYHotCollectCell.h"
+#import "MYHotChartsView.h"
 
 @interface MYHotController ()<UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
@@ -24,6 +25,14 @@
     [super viewDidLoad];
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self createCollectionView];
+    [self createChartsView];
+}
+
+- (void)createChartsView {
+    
+    MYHotChartsView * chartView = [[MYHotChartsView alloc] initWithFrame:CGRectMake(- SCREEN_WIDTH + 10, 100, SCREEN_WIDTH, 250)];
+    chartView.backgroundColor = [UIColor clearColor];
+    [self.view addSubview:chartView];
 }
 
 - (void)createCollectionView {
@@ -37,7 +46,7 @@
     _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - 64- 49) collectionViewLayout:flowLayout];
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
-    _collectionView.backgroundColor = [UIColor whiteColor];
+    _collectionView.backgroundColor = [UIColor colorWithWhite:0.8 alpha:1];
     [self.view addSubview:_collectionView];
     
     //注册

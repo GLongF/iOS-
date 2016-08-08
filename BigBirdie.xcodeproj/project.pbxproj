@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0404D2201D58266900E267E1 /* MYHotChartsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0404D21F1D58266900E267E1 /* MYHotChartsView.m */; };
 		04A6F6F11D52CB9D000E26DD /* MYHotCollectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6F6ED1D52CB9D000E26DD /* MYHotCollectCell.m */; };
 		04A6F6F21D52CB9D000E26DD /* MYHotCollectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A6F6EE1D52CB9D000E26DD /* MYHotCollectCell.xib */; };
 		04A6F6F31D52CB9D000E26DD /* MYHotHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6F6F01D52CB9D000E26DD /* MYHotHeaderView.m */; };
@@ -131,6 +132,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0404D21E1D58266900E267E1 /* MYHotChartsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYHotChartsView.h; sourceTree = "<group>"; };
+		0404D21F1D58266900E267E1 /* MYHotChartsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYHotChartsView.m; sourceTree = "<group>"; };
 		04A6F6EC1D52CB9D000E26DD /* MYHotCollectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYHotCollectCell.h; sourceTree = "<group>"; };
 		04A6F6ED1D52CB9D000E26DD /* MYHotCollectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYHotCollectCell.m; sourceTree = "<group>"; };
 		04A6F6EE1D52CB9D000E26DD /* MYHotCollectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYHotCollectCell.xib; sourceTree = "<group>"; };
@@ -505,6 +508,8 @@
 				04A6F6EE1D52CB9D000E26DD /* MYHotCollectCell.xib */,
 				04A6F6EF1D52CB9D000E26DD /* MYHotHeaderView.h */,
 				04A6F6F01D52CB9D000E26DD /* MYHotHeaderView.m */,
+				0404D21E1D58266900E267E1 /* MYHotChartsView.h */,
+				0404D21F1D58266900E267E1 /* MYHotChartsView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -933,6 +938,7 @@
 				6FFD9CBB1D4F176D00848282 /* WaveView.m in Sources */,
 				6F4C05B41D51D4FE0019A870 /* MYLoginViewController.m in Sources */,
 				6F7FD2061D47096900451F58 /* AppDelegate.m in Sources */,
+				0404D2201D58266900E267E1 /* MYHotChartsView.m in Sources */,
 				6F8C5BA31D49B714006B9980 /* MYMeheaderView.m in Sources */,
 				6FFD9CBE1D4F17E800848282 /* MYVoiceViewController.m in Sources */,
 				6F4C05B51D51D4FE0019A870 /* MYTabBar.m in Sources */,

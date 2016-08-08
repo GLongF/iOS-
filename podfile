@@ -6,4 +6,5 @@ pod 'SDCycleScrollView’
 pod 'POP+MCAnimate'
 pod 'AFNetworking'
 pod 'Masonry'
+pod 'ReactiveCocoa'
 end
