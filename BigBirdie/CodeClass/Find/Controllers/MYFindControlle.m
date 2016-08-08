@@ -35,6 +35,9 @@
     self.magicView.dataSource = self;
     self.magicView.delegate = self;
     [self.magicView reloadData];
+    
+    [self addLeftBtn];
+    [self addRightBtn];
 }
 
 - (NSArray<NSString *> *)menuTitlesForMagicView:(VTMagicView *)magicView {
@@ -91,6 +94,27 @@
     }
 }
 
+- (void)addLeftBtn {
+    UIButton *leftBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
+    [leftBtn setImage:[UIImage imageNamed:@"search@2x"] forState:UIControlStateNormal];
+    [[leftBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        
+        NSLog(@"搜索。。。");
+    }];
+
+    self.magicView.leftNavigatoinItem = leftBtn;
+}
+
+- (void)addRightBtn {
+    UIButton *rightBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
+    [rightBtn setImage:[UIImage imageNamed:@"search@2x"] forState:UIControlStateNormal];
+    [[rightBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        
+        NSLog(@"播放详情");
+    }];
+    
+    self.magicView.rightNavigatoinItem = rightBtn;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     
