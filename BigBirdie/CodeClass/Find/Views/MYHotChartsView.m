@@ -55,7 +55,8 @@
         self.isShow = NO;
         [self createLabel];
         [self createTableview];
-        [self addTap];
+//        [self addTap];
+        [self addPan];
     }
     return self;
 }
@@ -119,10 +120,53 @@
     NSLog(@"点击了cell");
 }
 
-- (void)addTap {
+//- (void)addTap {
+//    
+//    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideOrShow)];
+//    [self addGestureRecognizer:tap];
+//}
+- (void)addPan {
     
-    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideOrShow)];
-    [self addGestureRecognizer:tap];
+    UIPanGestureRecognizer * pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(move:)];
+    [self addGestureRecognizer:pan];
+}
+
+- (void)move:(UIPanGestureRecognizer *)pan {
+    
+    static CGPoint orgin;
+    static BOOL isWillShow;
+    if (pan.state == UIGestureRecognizerStateBegan) {
+        
+        orgin = [pan locationInView:self];
+    }else if (pan.state == UIGestureRecognizerStateChanged) {
+        
+        CGPoint newPoint = [pan locationInView:self];
+        //改变的值
+//        CGPoint move = [pan translationInView:self];
+        CGRect oldFrame = self.frame;
+        oldFrame.origin.x += newPoint.x - orgin.x;
+        self.frame = oldFrame;
+        if (newPoint.x > orgin.x) {
+            
+            //出现
+            isWillShow = YES;
+        }else {
+            
+            //消失
+            isWillShow = NO;
+        }
+        
+    }else {
+        
+        if (isWillShow) {
+            
+            [self show];
+        }else {
+            
+            [self hide];
+        }
+    }
+    orgin = [pan locationInView:self];
 }
 
 - (void)hideOrShow {
@@ -146,5 +190,27 @@
         [self pop_addAnimation:animation forKey:@"popHide"];
         self.isShow = NO;
     }
+}
+
+
+- (void)hide {
+    
+    POPSpringAnimation * animation = [POPSpringAnimation animationWithPropertyNamed:kPOPViewFrame];
+    animation.toValue = [NSValue valueWithCGRect:CGRectMake(- SCREEN_WIDTH + 10, self.y, self.width, self.height)];
+    animation.beginTime = CACurrentMediaTime();
+    animation.springSpeed = 20;
+    animation.springBounciness = 12;
+    [self pop_addAnimation:animation forKey:@"popHide"];
+    self.isShow = NO;
+}
+
+- (void)show {
+    
+    POPSpringAnimation * animation = [POPSpringAnimation animationWithPropertyNamed:kPOPViewFrame];
+    animation.toValue = [NSValue valueWithCGRect:CGRectMake(0, self.y, self.width, self.height)];
+    animation.springSpeed = 20;
+    animation.springBounciness = 12;
+    [self pop_addAnimation:animation forKey:@"popShow"];
+    self.isShow = YES;
 }
 @end
