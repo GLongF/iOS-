@@ -59,6 +59,14 @@
     }
 }
 
+//- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
+//    //if内的条件应该为，当触摸点point超出蓝色部分，但在黄色部分时
+//    if (!CGRectContainsPoint(self.bounds, point) && CGRectContainsPoint(self.voiceButton.bounds, point)){
+//        return YES;
+//    }
+//    return NO;
+//}
+
 
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
     

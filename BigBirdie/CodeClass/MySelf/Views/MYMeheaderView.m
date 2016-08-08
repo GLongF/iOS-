@@ -9,7 +9,7 @@
 #import "MYMeheaderView.h"
 
 
-#define LABLEA_FONT 16.f
+#define LABLEA_FONT 15.f
 #define LABLEB_FONT 13.f
 
 @interface MYMeheaderView ()
@@ -49,7 +49,7 @@
     self.photoImage.layer.borderColor = [UIColor whiteColor].CGColor;
     [self addSubview:self.photoImage];
     [self.photoImage mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(weakSelf.backImage).mas_offset(148 / 3 * kWidth_Scale);
+        make.top.mas_equalTo(weakSelf.backImage).mas_offset(65 / 3 * kWidth_Scale);
         make.width.height.equalTo(@(100 * kWidth_Scale));
         make.centerX.equalTo(weakSelf.backImage);
     }];
@@ -58,9 +58,14 @@
     // 性别
     self.genderImage = [[UIImageView alloc] init];
     [self.genderImage setImage:[UIImage imageNamed:@""]];
+    self.genderImage.backgroundColor = [UIColor redColor];
     [self.backImage addSubview:self.genderImage];
     [self.genderImage mas_makeConstraints:^(MASConstraintMaker *make) {
-        
+        //make.top.equalTo(weakSelf.backImage).top.offset(306 / 3 * kWidth_Scale);
+        make.top.mas_equalTo(weakSelf.backImage).offset(300 / 3 * kWidth_Scale);
+        make.right.mas_equalTo(weakSelf.backImage).offset(- 440 / 3 * kWidth_Scale);
+        make.width.equalTo(@(54 / 3 * kWidth_Scale));
+        make.height.equalTo(@(72 / 3 * kWidth_Scale));
     }];
     // 等级
     self.level = [[UILabel alloc] init];
@@ -71,7 +76,7 @@
     self.nameLable.textAlignment = NSTextAlignmentCenter;
     self.nameLable.text = @"懵逼的少女";
     self.nameLable.textColor = [UIColor whiteColor];
-    self.nameLable.font = [UIFont systemFontOfSize:16 * kWidth_Scale];
+    self.nameLable.font = [UIFont systemFontOfSize:15 * kWidth_Scale];
     [self.backImage addSubview:self.nameLable];
     [self.nameLable mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(weakSelf.photoImage.mas_bottom).offset(10 * kWidth_Scale);

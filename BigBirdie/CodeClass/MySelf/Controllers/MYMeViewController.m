@@ -60,13 +60,10 @@
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource =self;
-    
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
-    
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.tableView registerClass:[MYMeCell class] forCellReuseIdentifier:@"cell"];
     self.tableView.backgroundColor = [UIColor blackColor];
     [self.view addSubview:self.tableView];
-    
     MYMeheaderView *headerView = [[MYMeheaderView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH , 800 / 3 * kWidth_Scale)];
     self.tableView.tableHeaderView = headerView;
 }
