@@ -55,7 +55,7 @@
         self.isShow = NO;
         [self createLabel];
         [self createTableview];
-//        [self addTap];
+        [self addTap];
         [self addPan];
     }
     return self;
@@ -120,11 +120,11 @@
     NSLog(@"点击了cell");
 }
 
-//- (void)addTap {
-//    
-//    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideOrShow)];
-//    [self addGestureRecognizer:tap];
-//}
+- (void)addTap {
+    
+    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideOrShow)];
+    [self addGestureRecognizer:tap];
+}
 - (void)addPan {
     
     UIPanGestureRecognizer * pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(move:)];

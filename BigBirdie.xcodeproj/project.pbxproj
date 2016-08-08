@@ -20,6 +20,7 @@
 		6F37CCFB1D52E1C4004E0BB0 /* VTMagicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37CCF11D52E1C4004E0BB0 /* VTMagicController.m */; };
 		6F37CCFC1D52E1C4004E0BB0 /* VTMagicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37CCF41D52E1C4004E0BB0 /* VTMagicView.m */; };
 		6F37CCFD1D52E1C4004E0BB0 /* VTMenuBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37CCF61D52E1C4004E0BB0 /* VTMenuBar.m */; };
+		6F47AE181D5883D800407D06 /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F47AE171D5883D800407D06 /* search@2x.png */; };
 		6F4C05B41D51D4FE0019A870 /* MYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4C05AF1D51D4FE0019A870 /* MYLoginViewController.m */; };
 		6F4C05B51D51D4FE0019A870 /* MYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4C05B11D51D4FE0019A870 /* MYTabBar.m */; };
 		6F4C05B61D51D4FE0019A870 /* MYTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4C05B31D51D4FE0019A870 /* MYTabBarViewController.m */; };
@@ -162,6 +163,7 @@
 		6F37CCF41D52E1C4004E0BB0 /* VTMagicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTMagicView.m; sourceTree = "<group>"; };
 		6F37CCF51D52E1C4004E0BB0 /* VTMenuBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTMenuBar.h; sourceTree = "<group>"; };
 		6F37CCF61D52E1C4004E0BB0 /* VTMenuBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTMenuBar.m; sourceTree = "<group>"; };
+		6F47AE171D5883D800407D06 /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
 		6F4C05AE1D51D4FE0019A870 /* MYLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLoginViewController.h; sourceTree = "<group>"; };
 		6F4C05AF1D51D4FE0019A870 /* MYLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLoginViewController.m; sourceTree = "<group>"; };
 		6F4C05B01D51D4FE0019A870 /* MYTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTabBar.h; sourceTree = "<group>"; };
@@ -593,6 +595,7 @@
 		6F7FD2281D470DF300451F58 /* pictures */ = {
 			isa = PBXGroup;
 			children = (
+				6F47AE171D5883D800407D06 /* search@2x.png */,
 				6F7FD2291D470DF300451F58 /* dazuimaike@2x.png */,
 				6F7FD22B1D470DF300451F58 /* fanhui@2x.png */,
 				6F7FD22C1D470DF300451F58 /* fanhui@3x.png */,
@@ -831,6 +834,7 @@
 				6FFD9CD91D4F32B600848282 /* callme@2x.png in Resources */,
 				6FFD9CE81D4F32B600848282 /* myVoice@3x.png in Resources */,
 				6F7FD26A1D470DF300451F58 /* xixni@3x.png in Resources */,
+				6F47AE181D5883D800407D06 /* search@2x.png in Resources */,
 				6FFD9CEA1D4F32B600848282 /* setting@2x.png in Resources */,
 				6FFD9CEB1D4F32B600848282 /* suggest@2x.png in Resources */,
 				6F7FD2581D470DF300451F58 /* next@3x.png in Resources */,
