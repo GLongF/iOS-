@@ -132,6 +132,7 @@
         POPBasicAnimation * animation = [POPBasicAnimation animationWithPropertyNamed:kPOPViewFrame];
         animation.toValue = [NSValue valueWithCGRect:CGRectMake(0, self.y, self.width, self.height)];
         animation.beginTime = CACurrentMediaTime();
+        animation.duration = 0.2;
         animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
         [self pop_addAnimation:animation forKey:@"popShow"];
         self.isShow = YES;
@@ -140,6 +141,7 @@
         POPBasicAnimation * animation = [POPBasicAnimation animationWithPropertyNamed:kPOPViewFrame];
         animation.toValue = [NSValue valueWithCGRect:CGRectMake(- SCREEN_WIDTH + 10, self.y, self.width, self.height)];
         animation.beginTime = CACurrentMediaTime();
+        animation.duration = 0.2;
         animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
         [self pop_addAnimation:animation forKey:@"popHide"];
         self.isShow = NO;
