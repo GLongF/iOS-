@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MYTabBarViewController.h"
+#import "MYLoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +20,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
-    self.window.rootViewController = [[MYTabBarViewController alloc] init];
+    //self.window.rootViewController = [[MYTabBarViewController alloc] init];
+    self.window.rootViewController = [[MYLoginViewController alloc] init];
     [self.window makeKeyAndVisible];
     
     return YES;

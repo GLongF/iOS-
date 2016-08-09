@@ -83,6 +83,12 @@
 		6F8C5BAA1D49B72E006B9980 /* MYPhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8C5BA81D49B72E006B9980 /* MYPhotoController.m */; };
 		6F8C5BAD1D49B792006B9980 /* MYMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8C5BAC1D49B792006B9980 /* MYMeViewController.m */; };
 		6F8C5BB01D49B7E3006B9980 /* MYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8C5BAF1D49B7E3006B9980 /* MYButton.m */; };
+		6FA420731D597B58008CD896 /* weixin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FA420721D597B58008CD896 /* weixin@2x.png */; };
+		6FA420751D597F21008CD896 /* weibo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FA420741D597F21008CD896 /* weibo@2x.png */; };
+		6FA420771D597F49008CD896 /* phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FA420761D597F49008CD896 /* phone@2x.png */; };
+		6FA420791D598C39008CD896 /* loginImage@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FA420781D598C39008CD896 /* loginImage@3x.png */; };
+		6FA4207B1D598C6A008CD896 /* qq@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FA4207A1D598C6A008CD896 /* qq@2x.png */; };
+		6FA4207D1D598CCE008CD896 /* loginImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FA4207C1D598CCE008CD896 /* loginImage@2x.png */; };
 		6FB9C31B1D503CC900FCD40E /* photo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FB9C31A1D503CC900FCD40E /* photo@3x.png */; };
 		6FFD9CBB1D4F176D00848282 /* WaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFD9CBA1D4F176D00848282 /* WaveView.m */; };
 		6FFD9CBE1D4F17E800848282 /* MYVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFD9CBD1D4F17E800848282 /* MYVoiceViewController.m */; };
@@ -249,6 +255,12 @@
 		6F8C5BAC1D49B792006B9980 /* MYMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYMeViewController.m; sourceTree = "<group>"; };
 		6F8C5BAE1D49B7E3006B9980 /* MYButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYButton.h; sourceTree = "<group>"; };
 		6F8C5BAF1D49B7E3006B9980 /* MYButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYButton.m; sourceTree = "<group>"; };
+		6FA420721D597B58008CD896 /* weixin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weixin@2x.png"; sourceTree = "<group>"; };
+		6FA420741D597F21008CD896 /* weibo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weibo@2x.png"; sourceTree = "<group>"; };
+		6FA420761D597F49008CD896 /* phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone@2x.png"; sourceTree = "<group>"; };
+		6FA420781D598C39008CD896 /* loginImage@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginImage@3x.png"; sourceTree = "<group>"; };
+		6FA4207A1D598C6A008CD896 /* qq@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qq@2x.png"; sourceTree = "<group>"; };
+		6FA4207C1D598CCE008CD896 /* loginImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginImage@2x.png"; sourceTree = "<group>"; };
 		6FB9C31A1D503CC900FCD40E /* photo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo@3x.png"; sourceTree = "<group>"; };
 		6FFD9CB91D4F176D00848282 /* WaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveView.h; sourceTree = "<group>"; };
 		6FFD9CBA1D4F176D00848282 /* WaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveView.m; sourceTree = "<group>"; };
@@ -595,6 +607,12 @@
 		6F7FD2281D470DF300451F58 /* pictures */ = {
 			isa = PBXGroup;
 			children = (
+				6FA4207A1D598C6A008CD896 /* qq@2x.png */,
+				6FA420761D597F49008CD896 /* phone@2x.png */,
+				6FA420741D597F21008CD896 /* weibo@2x.png */,
+				6FA420721D597B58008CD896 /* weixin@2x.png */,
+				6FA4207C1D598CCE008CD896 /* loginImage@2x.png */,
+				6FA420781D598C39008CD896 /* loginImage@3x.png */,
 				6F47AE171D5883D800407D06 /* search@2x.png */,
 				6F7FD2291D470DF300451F58 /* dazuimaike@2x.png */,
 				6F7FD22B1D470DF300451F58 /* fanhui@2x.png */,
@@ -789,6 +807,7 @@
 				6F7FD2671D470DF300451F58 /* wodeshengyin@2x.png in Resources */,
 				6F7FD1DC1D4708E700451F58 /* LaunchScreen.storyboard in Resources */,
 				6F7FD24E1D470DF300451F58 /* dazuimaike@3x.png in Resources */,
+				6FA420751D597F21008CD896 /* weibo@2x.png in Resources */,
 				6FFD9CE71D4F32B600848282 /* myVoice@2x.png in Resources */,
 				6F7FD25B1D470DF300451F58 /* qianyishou@2x.png in Resources */,
 				6FFD9CF11D4F3B6D00848282 /* boxroom@2x.png in Resources */,
@@ -825,12 +844,15 @@
 				6F7FD26D1D470DF300451F58 /* zanting@2x.png in Resources */,
 				6FFD9CE51D4F32B600848282 /* myb.png in Resources */,
 				6F7FD24F1D470DF300451F58 /* fanhui@2x.png in Resources */,
+				6FA4207D1D598CCE008CD896 /* loginImage@2x.png in Resources */,
 				6FFD9CDC1D4F32B600848282 /* eidt_@3x.png in Resources */,
 				6FFD9CE91D4F32B600848282 /* setting.png in Resources */,
 				6F7FD2611D470DF300451F58 /* shouye@2x.png in Resources */,
 				6F7FD25D1D470DF300451F58 /* shezhi-tubiao@2x.png in Resources */,
+				6FA4207B1D598C6A008CD896 /* qq@2x.png in Resources */,
 				6F7FD2961D47525D00451F58 /* 4.jpg in Resources */,
 				6F7FD2661D470DF300451F58 /* tingzhibofang@3x.png in Resources */,
+				6FA420791D598C39008CD896 /* loginImage@3x.png in Resources */,
 				6FFD9CD91D4F32B600848282 /* callme@2x.png in Resources */,
 				6FFD9CE81D4F32B600848282 /* myVoice@3x.png in Resources */,
 				6F7FD26A1D470DF300451F58 /* xixni@3x.png in Resources */,
@@ -843,6 +865,7 @@
 				6FFD9CD71D4F32B600848282 /* acount@3x.png in Resources */,
 				6F7FD2901D47525100451F58 /* 1.jpg in Resources */,
 				6F7FD25C1D470DF300451F58 /* qianyishou@3x.png in Resources */,
+				6FA420731D597B58008CD896 /* weixin@2x.png in Resources */,
 				6FFD9CED1D4F32B600848282 /* women.png in Resources */,
 				6F7FD24D1D470DF300451F58 /* dazuimaike@2x.png in Resources */,
 				6FFD9CE61D4F32B600848282 /* myb@3x.png in Resources */,
@@ -859,6 +882,7 @@
 				6F7FD26B1D470DF300451F58 /* yijian@2x.png in Resources */,
 				6FFD9CD81D4F32B600848282 /* acount@2x.png in Resources */,
 				6F7FD2651D470DF300451F58 /* tingzhibofang@2x.png in Resources */,
+				6FA420771D597F49008CD896 /* phone@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
