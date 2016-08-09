@@ -30,7 +30,7 @@
 
 - (void)createChartsView {
     
-    MYHotChartsView * chartView = [[MYHotChartsView alloc] initWithFrame:CGRectMake(- SCREEN_WIDTH + 10, 100, SCREEN_WIDTH, 250)];
+    MYHotChartsView * chartView = [[MYHotChartsView alloc] initWithFrame:CGRectMake(- SCREEN_WIDTH + 20, 100, SCREEN_WIDTH, 250)];
     chartView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:chartView];
 }

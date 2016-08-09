@@ -31,7 +31,7 @@
     CGFloat xMax = rect.size.width;
     CGFloat yMax = rect.size.height;
     CGFloat cornerRadius = 20.f;
-    CGFloat rightWidth = 10.f;
+    CGFloat rightWidth = 20.f;
     //得到上下文
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     //绘制
@@ -94,7 +94,7 @@
 }
 - (void)createTableview {
     
-    UITableView * tableview = [[UITableView alloc] initWithFrame:CGRectMake(0, 30, self.width - 10, self.height - 30 - 30) style:UITableViewStylePlain];
+    UITableView * tableview = [[UITableView alloc] initWithFrame:CGRectMake(0, 30, self.width - 20, self.height - 30 - 30) style:UITableViewStylePlain];
     tableview.delegate = self;
     tableview.dataSource = self;
     tableview.rowHeight = tableview.height / 3.f;
@@ -189,7 +189,7 @@
     }else {
     
         POPBasicAnimation * animation = [POPBasicAnimation animationWithPropertyNamed:kPOPViewFrame];
-        animation.toValue = [NSValue valueWithCGRect:CGRectMake(- SCREEN_WIDTH + 10, self.y, self.width, self.height)];
+        animation.toValue = [NSValue valueWithCGRect:CGRectMake(- SCREEN_WIDTH + 20, self.y, self.width, self.height)];
         animation.beginTime = CACurrentMediaTime();
         animation.duration = 0.2;
         animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
@@ -212,7 +212,7 @@
 - (void)hide {
     
     POPSpringAnimation * animation = [POPSpringAnimation animationWithPropertyNamed:kPOPViewFrame];
-    animation.toValue = [NSValue valueWithCGRect:CGRectMake(- SCREEN_WIDTH + 10, self.y, self.width, self.height)];
+    animation.toValue = [NSValue valueWithCGRect:CGRectMake(- SCREEN_WIDTH + 20, self.y, self.width, self.height)];
     animation.beginTime = CACurrentMediaTime();
     animation.springSpeed = 20;
     animation.springBounciness = 12;
@@ -236,7 +236,7 @@
     
     if (!_backView) {
         
-        UIBlurEffect *blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
+        UIBlurEffect *blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
         _backView = [[UIVisualEffectView alloc] initWithEffect:blur];
         _backView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
         UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hide)];
