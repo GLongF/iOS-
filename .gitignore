@@ -7,3 +7,5 @@ tmp
 *.pbxuser
 *.xcworkspace
 xcuserdata
+.lock
+pods

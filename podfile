@@ -7,4 +7,5 @@ pod 'POP+MCAnimate'
 pod 'AFNetworking'
 pod 'Masonry'
 pod 'ReactiveCocoa'
+pod 'UMengSocialCOM'
 end

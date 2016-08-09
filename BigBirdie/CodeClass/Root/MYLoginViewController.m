@@ -40,6 +40,23 @@
         make.bottom.mas_equalTo(self.backImage.bottom).offset( - 221 * kWidth_Scale);
         make.width.height.equalTo(@(50 * kWidth_Scale));
     }];
+    
+    [[self.weixinButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        UMSocialSnsPlatform *snsPlatform = [UMSocialSnsPlatformManager getSocialPlatformWithName:UMShareToWechatSession];
+        
+        snsPlatform.loginClickHandler(self,[UMSocialControllerService defaultControllerService],YES,^(UMSocialResponseEntity *response){
+            
+            if (response.responseCode == UMSResponseCodeSuccess) {
+                
+                NSDictionary *dict = [UMSocialAccountManager socialAccountDictionary];
+                UMSocialAccountEntity *snsAccount = [[UMSocialAccountManager socialAccountDictionary] valueForKey:snsPlatform.platformName];
+                NSLog(@"\nusername = %@,\n usid = %@,\n token = %@ iconUrl = %@,\n unionId = %@,\n thirdPlatformUserProfile = %@,\n thirdPlatformResponse = %@ \n, message = %@",snsAccount.userName,snsAccount.usid,snsAccount.accessToken,snsAccount.iconURL, snsAccount.unionId, response.thirdPlatformUserProfile, response.thirdPlatformResponse, response.message);
+                
+            }
+            
+        });
+    }];
+
     // qq
     self.qqButton = [[UIButton alloc] init];
     [self.qqButton setImage:[UIImage imageNamed: @"qq@2x.png"] forState:UIControlStateNormal];
@@ -60,7 +77,8 @@
         make.bottom.mas_equalTo(self.backImage).offset( - 221 * kWidth_Scale);
         make.width.height.equalTo(@(50 * kWidth_Scale));
     }];
-    // 手机
+    
+       // 手机
     self.phoneButton = [[UIButton alloc] init];
     [self.phoneButton setImage:[UIImage imageNamed: @"phone@2x.png"] forState:UIControlStateNormal];
     self.phoneButton.layer.cornerRadius = 50 * kWidth_Scale;
@@ -98,6 +116,8 @@
     }];
 
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

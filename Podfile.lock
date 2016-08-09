@@ -50,6 +50,7 @@ PODS:
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
+  - UMengSocialCOM (5.2.1)
 
 DEPENDENCIES:
   - AFNetworking
@@ -57,6 +58,7 @@ DEPENDENCIES:
   - POP+MCAnimate
   - ReactiveCocoa
   - SDCycleScrollView
+  - UMengSocialCOM
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -66,7 +68,8 @@ SPEC CHECKSUMS:
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  UMengSocialCOM: 074c135ce349aa4c8848d3fb8458757bcb6ffb67
 
-PODFILE CHECKSUM: 99fb825a1e0b1a9bbe83decd2056919202ce75ad
+PODFILE CHECKSUM: 4dd505ea505f37fa5aa9338708fad5a86d4e13a1
 
 COCOAPODS: 1.0.1

@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "MYTabBarViewController.h"
 #import "MYLoginViewController.h"
+//#import "UMSocial.h"
+//#import "UMSocialWechatHandler.h"
 
 @interface AppDelegate ()
 
@@ -20,9 +22,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
-    //self.window.rootViewController = [[MYTabBarViewController alloc] init];
-    self.window.rootViewController = [[MYLoginViewController alloc] init];
+    self.window.rootViewController = [[MYTabBarViewController alloc] init];
+    //self.window.rootViewController = [[MYLoginViewController alloc] init];
     [self.window makeKeyAndVisible];
+//    
+//    [UMSocialData setAppKey:@"57a97c0967e58eca800002a7"];
+//
+//    //设置微信AppId、appSecret，分享url
+//    [UMSocialWechatHandler setWXAppId:@"wxd930ea5d5a258f4f" appSecret:@"db426a9829e4b49a0dcac7b4162da6b6" url:@"http://www.umeng.com/social"];
+
     
     return YES;
 }
