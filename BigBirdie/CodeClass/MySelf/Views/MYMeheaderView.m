@@ -53,7 +53,16 @@
         make.width.height.equalTo(@(100 * kWidth_Scale));
         make.centerX.equalTo(weakSelf.backImage);
     }];
+    //给头像添加点击手势
+    self.photoImage.userInteractionEnabled = YES;
+    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] init];
+    [self.photoImage addGestureRecognizer:tap];
     
+    @weakify(self);
+    [[tap rac_gestureSignal] subscribeNext:^(id x) {
+        @strongify(self);
+        [self.subject sendNext:x];
+    }];
     
     // 性别
     self.genderImage = [[UIImageView alloc] init];
@@ -197,6 +206,16 @@
     button.titleLabel.textAlignment = NSTextAlignmentCenter;
     [button setTitleColor:[UIColor colorWithHexString:colorStr] forState:UIControlStateNormal];
 
+}
+
+#pragma mark -getter
+- (RACSubject *)subject {
+    
+    if (!_subject) {
+        
+        _subject = [[RACSubject alloc] init];
+    }
+    return _subject;
 }
 
 

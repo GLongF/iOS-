@@ -9,7 +9,7 @@
 #import "MYMeViewController.h"
 #import "MYMeCell.h"
 #import "MYMeheaderView.h"
-
+#import "MYPhotoController.h"
 #import "MYEditController.h"
 
 @interface MYMeViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -64,7 +64,14 @@
     [self.tableView registerClass:[MYMeCell class] forCellReuseIdentifier:@"cell"];
     self.tableView.backgroundColor = [UIColor blackColor];
     [self.view addSubview:self.tableView];
+    
     MYMeheaderView *headerView = [[MYMeheaderView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH , 800 / 3 * kWidth_Scale)];
+    @weakify(self);
+    [headerView.subject subscribeNext:^(id x) {
+        @strongify(self);
+        MYPhotoController * photoVC = [[MYPhotoController alloc] init];
+        [self.navigationController pushViewController:photoVC animated:YES];
+    }];
     self.tableView.tableHeaderView = headerView;
 }
 
