@@ -70,20 +70,30 @@
             case AVPlayerItemStatusUnknown: {
                 
                 NSLog(@"不知道什么错误");
-                NSError * error;
-                [self.delegate prepareFailedWithError:error];
+                
+                if (self.delegate && [self.delegate respondsToSelector:@selector(prepareFailedWithError:)]) {
+                    
+                    NSError * error;
+                    [self.delegate prepareFailedWithError:error];
+                }
             }
                 break;
             case AVPlayerItemStatusReadyToPlay: {
                 
-                [self.delegate prepareEndCanPlay];
+                if (self.delegate && [self.delegate respondsToSelector:@selector(prepareEndCanPlay)]) {
+                    
+                    [self.delegate prepareEndCanPlay];
+                }
             }
                 break;
             case AVPlayerItemStatusFailed: {
                 
-                NSLog(@"准备失败");
                 NSError * error;
-                [self.delegate prepareFailedWithError:error];
+                if (self.delegate && [self.delegate respondsToSelector:@selector(prepareFailedWithError:)]) {
+                    
+                     NSLog(@"准备失败");
+                    [self.delegate prepareFailedWithError:error];
+                }
             }
                 break;
             default:
@@ -113,7 +123,10 @@
 
 - (void)timerAction {
     
-     [self.delegate getCurTime:[self valueToString:[self getCurTime]] totleTime:[self valueToString:[self getTotleTime]] progress:[self getProgress]];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(getCurTime:totleTime:progress:)]) {
+        
+        [self.delegate getCurTime:[self valueToString:[self getCurTime]] totleTime:[self valueToString:[self getTotleTime]] progress:[self getProgress]];
+    }
 }
 
 - (void)seekToTimeWithProgress:(CGFloat)progress {
