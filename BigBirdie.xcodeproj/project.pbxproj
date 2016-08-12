@@ -261,6 +261,7 @@
 		6FA420781D598C39008CD896 /* loginImage@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginImage@3x.png"; sourceTree = "<group>"; };
 		6FA4207A1D598C6A008CD896 /* qq@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qq@2x.png"; sourceTree = "<group>"; };
 		6FA4207C1D598CCE008CD896 /* loginImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginImage@2x.png"; sourceTree = "<group>"; };
+		6FA53A701D5B38FC0046AC70 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		6FB9C31A1D503CC900FCD40E /* photo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo@3x.png"; sourceTree = "<group>"; };
 		6FFD9CB91D4F176D00848282 /* WaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveView.h; sourceTree = "<group>"; };
 		6FFD9CBA1D4F176D00848282 /* WaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveView.m; sourceTree = "<group>"; };
@@ -692,6 +693,7 @@
 		ECD78D859530662D277D5654 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6FA53A701D5B38FC0046AC70 /* AVFoundation.framework */,
 				5A70F71BB0A7AF9835FEC67C /* Pods_BigBirdie.framework */,
 			);
 			name = Frameworks;

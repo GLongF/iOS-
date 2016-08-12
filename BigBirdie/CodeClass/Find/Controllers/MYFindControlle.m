@@ -23,8 +23,8 @@
     [super viewDidLoad];
     self.navigationController.navigationBarHidden = YES;
 
-    self.magicView.navigationColor = [UIColor whiteColor];
-    self.magicView.sliderColor = [UIColor redColor];
+    self.magicView.navigationColor = [UIColor blackColor];
+    self.magicView.sliderColor = [UIColor orangeColor];
     self.magicView.layoutStyle = VTLayoutStyleDivide;
     self.magicView.switchStyle = VTSwitchStyleDefault;
     self.magicView.sliderStyle = VTSliderStyleDefault;
@@ -52,7 +52,7 @@
     if (!item) {
         
         item = [UIButton buttonWithType:UIButtonTypeCustom];
-        [item setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [item setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     }
     return item;
 }
@@ -107,9 +107,9 @@
 
 - (void)addRightBtn {
     UIButton *rightBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
+    // 这里应该判断播放器的状态,给backImage的图片是否为动图
     [rightBtn setImage:[UIImage imageNamed:@"search@2x"] forState:UIControlStateNormal];
     [[rightBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-        
         NSLog(@"播放详情");
     }];
     

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -8,24 +8,26 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MYHotCollectCell">
-            <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
+            <rect key="frame" x="0.0" y="0.0" width="625" height="580"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
+                <rect key="frame" x="0.0" y="0.0" width="625" height="580"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zmp-RU-v0h">
-                        <rect key="frame" x="10" y="10" width="80" height="130"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vRH-jG-HaW">
+                        <rect key="frame" x="10" y="10" width="605" height="560"/>
                         <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="zmp-RU-v0h" secondAttribute="bottom" constant="10" id="fsc-3h-cBF"/>
-                <constraint firstItem="zmp-RU-v0h" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="g6D-4g-KWT"/>
-                <constraint firstAttribute="trailing" secondItem="zmp-RU-v0h" secondAttribute="trailing" constant="10" id="gcP-mb-JkU"/>
-                <constraint firstItem="zmp-RU-v0h" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="oHH-M5-Fgc"/>
+                <constraint firstAttribute="trailing" secondItem="vRH-jG-HaW" secondAttribute="trailing" constant="10" id="9lR-e5-jyZ"/>
+                <constraint firstItem="vRH-jG-HaW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="BPu-uL-5tx"/>
+                <constraint firstItem="vRH-jG-HaW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Hwj-5I-sED"/>
+                <constraint firstAttribute="bottom" secondItem="vRH-jG-HaW" secondAttribute="bottom" constant="10" id="yX3-Ea-quz"/>
             </constraints>
+            <size key="customSize" width="625" height="580"/>
+            <point key="canvasLocation" x="262.5" y="-246"/>
         </collectionViewCell>
     </objects>
 </document>
