@@ -7,6 +7,7 @@
 //
 
 #import "MYPhotoController.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface MYPhotoController ()
 
@@ -18,7 +19,12 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor purpleColor];
     self.navigationItem.title = @"编辑头像";
+    
+    
+    
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

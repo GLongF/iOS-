@@ -13,6 +13,8 @@
 @property(nonatomic,strong) UIImageView *backImage;
 // 头像
 @property(nonatomic,strong) UIButton *photoImage;
+
+@property(nonatomic,strong) RACSubject * subject;
 // 姓名
 @property(nonatomic,strong) UILabel *nameLable;
 // 性别

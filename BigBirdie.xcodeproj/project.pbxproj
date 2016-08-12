@@ -12,6 +12,7 @@
 		04A6F6F21D52CB9D000E26DD /* MYHotCollectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A6F6EE1D52CB9D000E26DD /* MYHotCollectCell.xib */; };
 		04A6F6F31D52CB9D000E26DD /* MYHotHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6F6F01D52CB9D000E26DD /* MYHotHeaderView.m */; };
 		04A6F6F61D52DC52000E26DD /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6F6F51D52DC52000E26DD /* UIColor+Hex.m */; };
+		04BB3D401D5C2A130059EC4A /* MYAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BB3D3F1D5C2A130059EC4A /* MYAudioPlayer.m */; };
 		132DDD59A516CE46C3ED7A17 /* Pods_BigBirdie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A70F71BB0A7AF9835FEC67C /* Pods_BigBirdie.framework */; };
 		6F37CCF71D52E1C4004E0BB0 /* UIColor+Magic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37CCE61D52E1C4004E0BB0 /* UIColor+Magic.m */; };
 		6F37CCF81D52E1C4004E0BB0 /* UIScrollView+Magic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37CCE81D52E1C4004E0BB0 /* UIScrollView+Magic.m */; };
@@ -148,6 +149,8 @@
 		04A6F6F01D52CB9D000E26DD /* MYHotHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYHotHeaderView.m; sourceTree = "<group>"; };
 		04A6F6F41D52DC52000E26DD /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		04A6F6F51D52DC52000E26DD /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		04BB3D3E1D5C2A130059EC4A /* MYAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYAudioPlayer.h; sourceTree = "<group>"; };
+		04BB3D3F1D5C2A130059EC4A /* MYAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYAudioPlayer.m; sourceTree = "<group>"; };
 		1B84AB1301579B37D131341E /* Pods-BigBirdie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigBirdie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BigBirdie/Pods-BigBirdie.debug.xcconfig"; sourceTree = "<group>"; };
 		1E2190FB79119F85681A6798 /* Pods-BigBirdie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigBirdie.release.xcconfig"; path = "Pods/Target Support Files/Pods-BigBirdie/Pods-BigBirdie.release.xcconfig"; sourceTree = "<group>"; };
 		5A70F71BB0A7AF9835FEC67C /* Pods_BigBirdie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BigBirdie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -464,6 +467,8 @@
 				6F7FD27B1D473A1A00451F58 /* UIView+MYExtension.m */,
 				6F8C5BAE1D49B7E3006B9980 /* MYButton.h */,
 				6F8C5BAF1D49B7E3006B9980 /* MYButton.m */,
+				04BB3D3E1D5C2A130059EC4A /* MYAudioPlayer.h */,
+				04BB3D3F1D5C2A130059EC4A /* MYAudioPlayer.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -964,6 +969,7 @@
 				6F8C5BB01D49B7E3006B9980 /* MYButton.m in Sources */,
 				6F8C5BAA1D49B72E006B9980 /* MYPhotoController.m in Sources */,
 				6F37CCFA1D52E1C4004E0BB0 /* VTContentView.m in Sources */,
+				04BB3D401D5C2A130059EC4A /* MYAudioPlayer.m in Sources */,
 				6F7FD1CE1D4708E700451F58 /* main.m in Sources */,
 				6FFD9CBB1D4F176D00848282 /* WaveView.m in Sources */,
 				6F4C05B41D51D4FE0019A870 /* MYLoginViewController.m in Sources */,
