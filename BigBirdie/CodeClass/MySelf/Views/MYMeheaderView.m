@@ -71,10 +71,10 @@
     [self.backImage addSubview:self.genderImage];
     [self.genderImage mas_makeConstraints:^(MASConstraintMaker *make) {
         //make.top.equalTo(weakSelf.backImage).top.offset(306 / 3 * kWidth_Scale);
-        make.top.mas_equalTo(weakSelf.backImage).offset(300 / 3 * kWidth_Scale);
+        make.top.mas_equalTo(weakSelf.backImage).offset(100 * kWidth_Scale);
         make.right.mas_equalTo(weakSelf.backImage).offset(- 440 / 3 * kWidth_Scale);
-        make.width.equalTo(@(54 / 3 * kWidth_Scale));
-        make.height.equalTo(@(72 / 3 * kWidth_Scale));
+        make.width.equalTo(@(18 * kWidth_Scale));
+        make.height.equalTo(@(24 * kWidth_Scale));
     }];
     // 等级
     self.level = [[UILabel alloc] init];
@@ -97,14 +97,11 @@
     
     /******  粉丝  ******/
     self.funsButton = [[UIButton alloc] init];
-    [self.funsButton setTitle:@"粉丝" forState:UIControlStateNormal];
-    self.funsButton.titleLabel.font = [UIFont systemFontOfSize:LABLEA_FONT * kWidth_Scale];
-    self.funsButton.titleLabel.textAlignment = NSTextAlignmentCenter;
-    [self.funsButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self addButton:self.funsButton Title:@"粉丝" font:LABLEA_FONT * kWidth_Scale colorString:@"#000000"];
     [self.backImage addSubview:self.funsButton];
     [self.funsButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(weakSelf.nameLable.mas_bottom).offset(20 * kWidth_Scale);
-        make.height.equalTo(@(42 / 3 * kWidth_Scale));
+        make.height.equalTo(@(14 * kWidth_Scale));
         make.centerX.equalTo(weakSelf.photoImage);
     }];
     
@@ -117,22 +114,20 @@
     [self.funsLableB mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(weakSelf.funsButton.mas_bottom).offset(10 * kWidth_Scale);
         make.centerX.equalTo(weakSelf.funsButton);
-        make.height.equalTo(@(42 / 3 * kWidth_Scale));
+        make.height.equalTo(@(14 * kWidth_Scale));
     }];
     
     
     /******  关注  ******/
     self.focusButton = [[UIButton alloc] init];
-    [self.focusButton setTitle:@"关注" forState:UIControlStateNormal];
-    self.focusButton.titleLabel.font = [UIFont systemFontOfSize:LABLEA_FONT * kWidth_Scale];
-    self.focusButton.titleLabel.textAlignment = NSTextAlignmentCenter;
-    [self.focusButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self addButton:self.focusButton Title:@"关注" font:LABLEA_FONT * kWidth_Scale colorString:@"#000000"];
     [self.backImage addSubview:self.focusButton];
     [self.focusButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(weakSelf.nameLable.mas_bottom).offset(20 * kWidth_Scale);
-        make.height.equalTo(@(42 / 3 * kWidth_Scale));
+        make.height.equalTo(@(14 * kWidth_Scale));
         make.right.mas_equalTo(weakSelf.funsButton.mas_left).offset( - 60 * kWidth_Scale);
     }];
+    
     
     self.focusLableB = [[UILabel alloc] init];
     [self.focusLableB setFont:[UIFont systemFontOfSize:LABLEB_FONT * kWidth_Scale]];
@@ -142,22 +137,19 @@
     [self.focusLableB mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(weakSelf.funsButton.mas_bottom).offset(10 * kWidth_Scale);
         make.centerX.equalTo(weakSelf.focusButton);
-        make.height.equalTo(@(42 / 3 * kWidth_Scale));
+        make.height.equalTo(@(14 * kWidth_Scale));
     }];
 
     
-#warning 名字还没想好
+
     
     /******  大嘴币  ******/
     self.praiseButton = [[UIButton alloc] init];
-    [self.praiseButton setTitle:@"大嘴币" forState:UIControlStateNormal];
-    self.praiseButton.titleLabel.font = [UIFont systemFontOfSize:LABLEA_FONT * kWidth_Scale];
-    self.praiseButton.titleLabel.textAlignment = NSTextAlignmentCenter;
-    [self.praiseButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self addButton:self.praiseButton Title:@"试币" font:LABLEA_FONT * kWidth_Scale colorString:@"#000000"];
     [self.backImage addSubview:self.praiseButton];
     [self.praiseButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(weakSelf.nameLable.mas_bottom).offset(20 * kWidth_Scale);
-        make.height.equalTo(@(42 / 3 * kWidth_Scale));
+        make.height.equalTo(@(14 * kWidth_Scale));
         make.left.mas_equalTo(weakSelf.funsButton.mas_right).offset(60 * kWidth_Scale);
     }];
 
@@ -170,7 +162,7 @@
     [self.praiseLableB mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(weakSelf.funsButton.mas_bottom).offset(10 * kWidth_Scale);
         make.centerX.equalTo(weakSelf.praiseButton);
-        make.height.equalTo(@(42 / 3 * kWidth_Scale));
+        make.height.equalTo(@(14* kWidth_Scale));
     }];
 
     
@@ -207,6 +199,7 @@
     [button setTitleColor:[UIColor colorWithHexString:colorStr] forState:UIControlStateNormal];
 
 }
+
 
 #pragma mark -getter
 - (RACSubject *)subject {

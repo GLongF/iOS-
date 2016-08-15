@@ -91,6 +91,15 @@
 		6FA4207B1D598C6A008CD896 /* qq@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FA4207A1D598C6A008CD896 /* qq@2x.png */; };
 		6FA4207D1D598CCE008CD896 /* loginImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FA4207C1D598CCE008CD896 /* loginImage@2x.png */; };
 		6FB9C31B1D503CC900FCD40E /* photo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FB9C31A1D503CC900FCD40E /* photo@3x.png */; };
+		6FF6F0EF1D61603E00130BEB /* MYFocusController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF6F0EE1D61603E00130BEB /* MYFocusController.m */; };
+		6FF6F0F21D61648300130BEB /* MYSongController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF6F0F11D61648300130BEB /* MYSongController.m */; };
+		6FF6F0F51D61697700130BEB /* MYCollectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF6F0F41D61697700130BEB /* MYCollectController.m */; };
+		6FF6F0F81D616A5100130BEB /* MYHistoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF6F0F71D616A5100130BEB /* MYHistoryController.m */; };
+		6FF6F0FB1D616B1A00130BEB /* MYAccountController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF6F0FA1D616B1A00130BEB /* MYAccountController.m */; };
+		6FF6F0FE1D616B4200130BEB /* MYFeedbackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF6F0FD1D616B4200130BEB /* MYFeedbackController.m */; };
+		6FF6F1041D616B9900130BEB /* MYSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF6F1031D616B9900130BEB /* MYSettingController.m */; };
+		6FF6F1071D61A40500130BEB /* MYRecordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF6F1061D61A40500130BEB /* MYRecordController.m */; };
+		6FF6F10A1D61A81100130BEB /* MYLivingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF6F1091D61A81100130BEB /* MYLivingController.m */; };
 		6FFD9CBB1D4F176D00848282 /* WaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFD9CBA1D4F176D00848282 /* WaveView.m */; };
 		6FFD9CBE1D4F17E800848282 /* MYVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFD9CBD1D4F17E800848282 /* MYVoiceViewController.m */; };
 		6FFD9CD71D4F32B600848282 /* acount@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD9CBF1D4F32B600848282 /* acount@3x.png */; };
@@ -266,6 +275,24 @@
 		6FA4207C1D598CCE008CD896 /* loginImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginImage@2x.png"; sourceTree = "<group>"; };
 		6FA53A701D5B38FC0046AC70 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		6FB9C31A1D503CC900FCD40E /* photo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo@3x.png"; sourceTree = "<group>"; };
+		6FF6F0ED1D61603E00130BEB /* MYFocusController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFocusController.h; sourceTree = "<group>"; };
+		6FF6F0EE1D61603E00130BEB /* MYFocusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFocusController.m; sourceTree = "<group>"; };
+		6FF6F0F01D61648300130BEB /* MYSongController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSongController.h; sourceTree = "<group>"; };
+		6FF6F0F11D61648300130BEB /* MYSongController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSongController.m; sourceTree = "<group>"; };
+		6FF6F0F31D61697700130BEB /* MYCollectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCollectController.h; sourceTree = "<group>"; };
+		6FF6F0F41D61697700130BEB /* MYCollectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCollectController.m; sourceTree = "<group>"; };
+		6FF6F0F61D616A5100130BEB /* MYHistoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYHistoryController.h; sourceTree = "<group>"; };
+		6FF6F0F71D616A5100130BEB /* MYHistoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYHistoryController.m; sourceTree = "<group>"; };
+		6FF6F0F91D616B1A00130BEB /* MYAccountController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYAccountController.h; sourceTree = "<group>"; };
+		6FF6F0FA1D616B1A00130BEB /* MYAccountController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYAccountController.m; sourceTree = "<group>"; };
+		6FF6F0FC1D616B4200130BEB /* MYFeedbackController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFeedbackController.h; sourceTree = "<group>"; };
+		6FF6F0FD1D616B4200130BEB /* MYFeedbackController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFeedbackController.m; sourceTree = "<group>"; };
+		6FF6F1021D616B9900130BEB /* MYSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSettingController.h; sourceTree = "<group>"; };
+		6FF6F1031D616B9900130BEB /* MYSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSettingController.m; sourceTree = "<group>"; };
+		6FF6F1051D61A40500130BEB /* MYRecordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYRecordController.h; sourceTree = "<group>"; };
+		6FF6F1061D61A40500130BEB /* MYRecordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYRecordController.m; sourceTree = "<group>"; };
+		6FF6F1081D61A81100130BEB /* MYLivingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLivingController.h; sourceTree = "<group>"; };
+		6FF6F1091D61A81100130BEB /* MYLivingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLivingController.m; sourceTree = "<group>"; };
 		6FFD9CB91D4F176D00848282 /* WaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveView.h; sourceTree = "<group>"; };
 		6FFD9CBA1D4F176D00848282 /* WaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveView.m; sourceTree = "<group>"; };
 		6FFD9CBC1D4F17E800848282 /* MYVoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYVoiceViewController.h; sourceTree = "<group>"; };
@@ -549,10 +576,24 @@
 			children = (
 				6F8C5BAB1D49B792006B9980 /* MYMeViewController.h */,
 				6F8C5BAC1D49B792006B9980 /* MYMeViewController.m */,
-				6F8C5BA51D49B72E006B9980 /* MYEditController.h */,
-				6F8C5BA61D49B72E006B9980 /* MYEditController.m */,
 				6F8C5BA71D49B72E006B9980 /* MYPhotoController.h */,
 				6F8C5BA81D49B72E006B9980 /* MYPhotoController.m */,
+				6F8C5BA51D49B72E006B9980 /* MYEditController.h */,
+				6F8C5BA61D49B72E006B9980 /* MYEditController.m */,
+				6FF6F0ED1D61603E00130BEB /* MYFocusController.h */,
+				6FF6F0EE1D61603E00130BEB /* MYFocusController.m */,
+				6FF6F0F01D61648300130BEB /* MYSongController.h */,
+				6FF6F0F11D61648300130BEB /* MYSongController.m */,
+				6FF6F0F31D61697700130BEB /* MYCollectController.h */,
+				6FF6F0F41D61697700130BEB /* MYCollectController.m */,
+				6FF6F0F61D616A5100130BEB /* MYHistoryController.h */,
+				6FF6F0F71D616A5100130BEB /* MYHistoryController.m */,
+				6FF6F0F91D616B1A00130BEB /* MYAccountController.h */,
+				6FF6F0FA1D616B1A00130BEB /* MYAccountController.m */,
+				6FF6F0FC1D616B4200130BEB /* MYFeedbackController.h */,
+				6FF6F0FD1D616B4200130BEB /* MYFeedbackController.m */,
+				6FF6F1021D616B9900130BEB /* MYSettingController.h */,
+				6FF6F1031D616B9900130BEB /* MYSettingController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -590,6 +631,10 @@
 			children = (
 				6FFD9CBC1D4F17E800848282 /* MYVoiceViewController.h */,
 				6FFD9CBD1D4F17E800848282 /* MYVoiceViewController.m */,
+				6FF6F1051D61A40500130BEB /* MYRecordController.h */,
+				6FF6F1061D61A40500130BEB /* MYRecordController.m */,
+				6FF6F1081D61A81100130BEB /* MYLivingController.h */,
+				6FF6F1091D61A81100130BEB /* MYLivingController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -964,10 +1009,12 @@
 			files = (
 				6F4C05B61D51D4FE0019A870 /* MYTabBarViewController.m in Sources */,
 				6F7FD27C1D473A1A00451F58 /* UIView+MYExtension.m in Sources */,
+				6FF6F10A1D61A81100130BEB /* MYLivingController.m in Sources */,
 				6F7FD1D41D4708E700451F58 /* ViewController.m in Sources */,
 				6F37CCF81D52E1C4004E0BB0 /* UIScrollView+Magic.m in Sources */,
 				6F8C5BB01D49B7E3006B9980 /* MYButton.m in Sources */,
 				6F8C5BAA1D49B72E006B9980 /* MYPhotoController.m in Sources */,
+				6FF6F0F51D61697700130BEB /* MYCollectController.m in Sources */,
 				6F37CCFA1D52E1C4004E0BB0 /* VTContentView.m in Sources */,
 				04BB3D401D5C2A130059EC4A /* MYAudioPlayer.m in Sources */,
 				6F7FD1CE1D4708E700451F58 /* main.m in Sources */,
@@ -976,19 +1023,26 @@
 				6F7FD2061D47096900451F58 /* AppDelegate.m in Sources */,
 				0404D2201D58266900E267E1 /* MYHotChartsView.m in Sources */,
 				6F8C5BA31D49B714006B9980 /* MYMeheaderView.m in Sources */,
+				6FF6F0F81D616A5100130BEB /* MYHistoryController.m in Sources */,
 				6FFD9CBE1D4F17E800848282 /* MYVoiceViewController.m in Sources */,
 				6F4C05B51D51D4FE0019A870 /* MYTabBar.m in Sources */,
 				04A6F6F31D52CB9D000E26DD /* MYHotHeaderView.m in Sources */,
+				6FF6F0FE1D616B4200130BEB /* MYFeedbackController.m in Sources */,
 				6F37CCF71D52E1C4004E0BB0 /* UIColor+Magic.m in Sources */,
 				6F7FD27F1D473B1B00451F58 /* MYHotController.m in Sources */,
 				04A6F6F11D52CB9D000E26DD /* MYHotCollectCell.m in Sources */,
 				6F37CCFD1D52E1C4004E0BB0 /* VTMenuBar.m in Sources */,
+				6FF6F0F21D61648300130BEB /* MYSongController.m in Sources */,
 				6F37CCFC1D52E1C4004E0BB0 /* VTMagicView.m in Sources */,
 				6F8C5BA41D49B714006B9980 /* MYMeCell.m in Sources */,
 				6F8C5BAD1D49B792006B9980 /* MYMeViewController.m in Sources */,
+				6FF6F1041D616B9900130BEB /* MYSettingController.m in Sources */,
+				6FF6F0FB1D616B1A00130BEB /* MYAccountController.m in Sources */,
+				6FF6F0EF1D61603E00130BEB /* MYFocusController.m in Sources */,
 				6F8C5BA91D49B72E006B9980 /* MYEditController.m in Sources */,
 				6F37CCF91D52E1C4004E0BB0 /* UIViewController+Magic.m in Sources */,
 				6F7FD2201D470B6C00451F58 /* MYFindControlle.m in Sources */,
+				6FF6F1071D61A40500130BEB /* MYRecordController.m in Sources */,
 				04A6F6F61D52DC52000E26DD /* UIColor+Hex.m in Sources */,
 				6F37CCFB1D52E1C4004E0BB0 /* VTMagicController.m in Sources */,
 				6F7FD2821D473B3600451F58 /* MYNewController.m in Sources */,

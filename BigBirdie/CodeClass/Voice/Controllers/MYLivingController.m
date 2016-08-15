@@ -1,27 +1,23 @@
 //
-//  MYPhotoController.m
-//  100s
+//  MYLivingController.m
+//  BigBirdie
 //
-//  Created by 郭龙飞 on 16/7/18.
+//  Created by 郭龙飞 on 16/8/15.
 //  Copyright © 2016年 郭龙飞. All rights reserved.
 //
 
-#import "MYPhotoController.h"
-#import <AVFoundation/AVFoundation.h>
+#import "MYLivingController.h"
 
-@interface MYPhotoController ()
+@interface MYLivingController ()
 
 @end
 
-@implementation MYPhotoController
+@implementation MYLivingController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor purpleColor];
-    self.navigationItem.title = @"编辑头像";
+    self.view.backgroundColor = [UIColor cyanColor];
 }
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

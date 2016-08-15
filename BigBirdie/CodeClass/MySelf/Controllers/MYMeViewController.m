@@ -12,10 +12,19 @@
 #import "MYPhotoController.h"
 #import "MYEditController.h"
 
+#import "MYSongController.h"
+#import "MYCollectController.h"
+#import "MYHistoryController.h"
+#import "MYAccountController.h"
+#import "MYFeedbackController.h"
+#import "MYSettingController.h"
+
+
 @interface MYMeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) NSMutableArray *tableImageArray;
 @property (nonatomic,strong) NSMutableArray *tableDataArry;
+@property (nonatomic,strong) MYMeheaderView *headerView;
 @end
 
 @implementation MYMeViewController
@@ -34,8 +43,9 @@
     [self setupTableView];
     
     // 数据源
-    self.tableDataArry = @[@"我的声音",@"我的收藏",@"播放历史",@"账户中心",@"意见反馈",@"联系我们",@"设置"].mutableCopy;
-    self.tableImageArray = @[@"myVoice@2x.png",@"boxroom@2x.png",@"history@2x.png",@"acount@2x.png",@"suggest@2x.png",@"callme@2x.png",@"setting@2x.png"].mutableCopy;
+    self.tableDataArry = @[@"我的声音",@"我的收藏",@"播放历史",@"账户中心",@"意见反馈",@"设置"].mutableCopy;
+    self.tableImageArray = @[@"myVoice@2x.png",@"boxroom@2x.png",@"history@2x.png",@"acount@2x.png",@"suggest@2x.png",@"setting@2x.png"].mutableCopy;
+
     
 }
 
@@ -54,6 +64,15 @@
     [self.navigationController pushViewController:edit animated:YES];
 }
 
+
+#pragma mack - 关注  粉丝 试票
+- (void)showFocusController {
+    [[self.headerView.focusButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        
+    }];
+}
+
+
 #pragma mark -- tableView
 
 - (void)setupTableView {
@@ -65,14 +84,17 @@
     self.tableView.backgroundColor = [UIColor blackColor];
     [self.view addSubview:self.tableView];
     
-    MYMeheaderView *headerView = [[MYMeheaderView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH , 800 / 3 * kWidth_Scale)];
+    self.headerView = [[MYMeheaderView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH , 800 / 3 * kWidth_Scale)];
+    
     @weakify(self);
-    [headerView.subject subscribeNext:^(id x) {
+    [self.headerView.subject subscribeNext:^(id x) {
         @strongify(self);
         MYPhotoController * photoVC = [[MYPhotoController alloc] init];
         [self.navigationController pushViewController:photoVC animated:YES];
     }];
-    self.tableView.tableHeaderView = headerView;
+    
+   
+    self.tableView.tableHeaderView = self.headerView;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -98,36 +120,62 @@
 // 页面跳转
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     switch (indexPath.row) {
-        case 1:
-            // code
+        case 0:
+            {
+                MYSongController *songVC = [[MYSongController alloc]init];
+                songVC.title = @"我的声音";
+                [self.navigationController pushViewController:songVC animated:YES];
+            }
             break;
             
+        case 1:
+            {
+              MYCollectController *collectVC = [[MYCollectController alloc]init];
+                collectVC.title = @"我的收藏";
+                [self.navigationController pushViewController:collectVC animated:YES];
+            }
+            break;
+        
         case 2:
-            // code
+           
+            {
+                MYHistoryController *historyVC = [[MYHistoryController alloc]init];
+                historyVC.title = @"播放历史";
+                [self.navigationController pushViewController:historyVC animated:YES];
+            }
             break;
         
         case 3:
-            // code
-            break;
+            {
+                MYAccountController *accountVC = [[MYAccountController alloc]init];
+                accountVC.title = @"账户中心";
+                [self.navigationController pushViewController:accountVC animated:YES];
+            }
+             break;
         
         case 4:
-            // cod
-             break;
-        
-        case 5:
-            // code
+            {
+                MYFeedbackController *feedbackVC = [[MYFeedbackController alloc]init];
+                feedbackVC.title = @"意见反馈";
+                [self.navigationController pushViewController:feedbackVC animated:YES];
+            }
             break;
         
-        case 6:
-            // cod
+        case 5:
+            {
+                MYSettingController *settingVC = [[MYSettingController alloc]init];
+                settingVC.title = @"设置";
+                [self.navigationController pushViewController:settingVC animated:YES];
+            }
+
              break;
+        
+        case 6:
+            // code
+            break;
         
         case 7:
             // code
-            break;
-        
-        case 8:
-            // cod
              break;
         
         default:

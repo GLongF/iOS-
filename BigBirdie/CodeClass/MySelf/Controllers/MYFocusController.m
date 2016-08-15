@@ -1,27 +1,23 @@
 //
-//  MYPhotoController.m
-//  100s
+//  MYFocusController.m
+//  BigBirdie
 //
-//  Created by 郭龙飞 on 16/7/18.
+//  Created by 郭龙飞 on 16/8/15.
 //  Copyright © 2016年 郭龙飞. All rights reserved.
 //
 
-#import "MYPhotoController.h"
-#import <AVFoundation/AVFoundation.h>
+#import "MYFocusController.h"
 
-@interface MYPhotoController ()
+@interface MYFocusController ()
 
 @end
 
-@implementation MYPhotoController
+@implementation MYFocusController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor purpleColor];
-    self.navigationItem.title = @"编辑头像";
+    // Do any additional setup after loading the view.
 }
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
