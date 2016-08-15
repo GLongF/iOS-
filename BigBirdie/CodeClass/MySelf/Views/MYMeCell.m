@@ -8,6 +8,11 @@
 
 #import "MYMeCell.h"
 
+@interface MYMeCell ()
+// 间隔线
+@property(nonatomic,strong) UILabel *spaceLabel;
+@end
+
 @implementation MYMeCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
@@ -40,6 +45,18 @@
         make.width.equalTo(@(80 * kWidth_Scale));
         
     }];
+    
+    self.spaceLabel = [[UILabel alloc] init];
+    self.spaceLabel.backgroundColor = [UIColor grayColor];
+    [self.contentView addSubview:self.spaceLabel];
+    [self.spaceLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(@(30 *kWidth_Scale));
+        make.right.equalTo(@(SCREEN_WIDTH - 30 * kWidth_Scale));
+        make.height.equalTo(@0.6);
+        make.bottom.mas_equalTo(weakSelf.contentView);
+        
+    }];
+
     
 #warning 关于这个Lable再考虑考虑
     self.introduceLable = [[UILabel alloc] init];

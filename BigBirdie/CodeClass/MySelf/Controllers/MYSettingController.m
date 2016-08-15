@@ -10,15 +10,22 @@
 
 @interface MYSettingController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
+@property (nonatomic,strong) NSMutableArray *tableArray;
+
 @end
 
 @implementation MYSettingController
 
+- (NSMutableArray *)tableArray{
+    if(!_tableArray){
+        _tableArray = [[NSMutableArray alloc] init];
+    }
+    return _tableArray;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor grayColor];
-    
-    
 }
 
 
@@ -36,6 +43,14 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    switch (section) {
+        case 0:
+            //
+            break;
+            
+        default:
+            break;
+    }
     return 0;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
