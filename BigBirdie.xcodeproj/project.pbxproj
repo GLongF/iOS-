@@ -22,6 +22,8 @@
 		6F37CCFC1D52E1C4004E0BB0 /* VTMagicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37CCF41D52E1C4004E0BB0 /* VTMagicView.m */; };
 		6F37CCFD1D52E1C4004E0BB0 /* VTMenuBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37CCF61D52E1C4004E0BB0 /* VTMenuBar.m */; };
 		6F3B06641D62DB0600ACA36D /* MYFunsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3B06631D62DB0600ACA36D /* MYFunsController.m */; };
+		6F3B066D1D62EBA900ACA36D /* MYPersonalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3B066C1D62EBA900ACA36D /* MYPersonalController.m */; };
+		6F3B06701D62EBBB00ACA36D /* MYCoinController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3B066F1D62EBBB00ACA36D /* MYCoinController.m */; };
 		6F47AE181D5883D800407D06 /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F47AE171D5883D800407D06 /* search@2x.png */; };
 		6F4C05B41D51D4FE0019A870 /* MYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4C05AF1D51D4FE0019A870 /* MYLoginViewController.m */; };
 		6F4C05B51D51D4FE0019A870 /* MYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4C05B11D51D4FE0019A870 /* MYTabBar.m */; };
@@ -184,6 +186,10 @@
 		6F37CCF61D52E1C4004E0BB0 /* VTMenuBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTMenuBar.m; sourceTree = "<group>"; };
 		6F3B06621D62DB0600ACA36D /* MYFunsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFunsController.h; sourceTree = "<group>"; };
 		6F3B06631D62DB0600ACA36D /* MYFunsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFunsController.m; sourceTree = "<group>"; };
+		6F3B066B1D62EBA900ACA36D /* MYPersonalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPersonalController.h; sourceTree = "<group>"; };
+		6F3B066C1D62EBA900ACA36D /* MYPersonalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPersonalController.m; sourceTree = "<group>"; };
+		6F3B066E1D62EBBB00ACA36D /* MYCoinController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCoinController.h; sourceTree = "<group>"; };
+		6F3B066F1D62EBBB00ACA36D /* MYCoinController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCoinController.m; sourceTree = "<group>"; };
 		6F47AE171D5883D800407D06 /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
 		6F4C05AE1D51D4FE0019A870 /* MYLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLoginViewController.h; sourceTree = "<group>"; };
 		6F4C05AF1D51D4FE0019A870 /* MYLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLoginViewController.m; sourceTree = "<group>"; };
@@ -587,6 +593,8 @@
 				6FF6F0EE1D61603E00130BEB /* MYFocusController.m */,
 				6F3B06621D62DB0600ACA36D /* MYFunsController.h */,
 				6F3B06631D62DB0600ACA36D /* MYFunsController.m */,
+				6F3B066E1D62EBBB00ACA36D /* MYCoinController.h */,
+				6F3B066F1D62EBBB00ACA36D /* MYCoinController.m */,
 				6FF6F0F01D61648300130BEB /* MYSongController.h */,
 				6FF6F0F11D61648300130BEB /* MYSongController.m */,
 				6FF6F0F31D61697700130BEB /* MYCollectController.h */,
@@ -599,6 +607,8 @@
 				6FF6F0FD1D616B4200130BEB /* MYFeedbackController.m */,
 				6FF6F1021D616B9900130BEB /* MYSettingController.h */,
 				6FF6F1031D616B9900130BEB /* MYSettingController.m */,
+				6F3B066B1D62EBA900ACA36D /* MYPersonalController.h */,
+				6F3B066C1D62EBA900ACA36D /* MYPersonalController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1037,6 +1047,7 @@
 				6F7FD27F1D473B1B00451F58 /* MYHotController.m in Sources */,
 				04A6F6F11D52CB9D000E26DD /* MYHotCollectCell.m in Sources */,
 				6F37CCFD1D52E1C4004E0BB0 /* VTMenuBar.m in Sources */,
+				6F3B06701D62EBBB00ACA36D /* MYCoinController.m in Sources */,
 				6FF6F0F21D61648300130BEB /* MYSongController.m in Sources */,
 				6F37CCFC1D52E1C4004E0BB0 /* VTMagicView.m in Sources */,
 				6F8C5BA41D49B714006B9980 /* MYMeCell.m in Sources */,
@@ -1045,6 +1056,7 @@
 				6FF6F0FB1D616B1A00130BEB /* MYAccountController.m in Sources */,
 				6FF6F0EF1D61603E00130BEB /* MYFocusController.m in Sources */,
 				6F3B06641D62DB0600ACA36D /* MYFunsController.m in Sources */,
+				6F3B066D1D62EBA900ACA36D /* MYPersonalController.m in Sources */,
 				6F8C5BA91D49B72E006B9980 /* MYEditController.m in Sources */,
 				6F37CCF91D52E1C4004E0BB0 /* UIViewController+Magic.m in Sources */,
 				6F7FD2201D470B6C00451F58 /* MYFindControlle.m in Sources */,
