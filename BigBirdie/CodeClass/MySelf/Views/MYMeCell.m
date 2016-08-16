@@ -54,7 +54,6 @@
         make.right.equalTo(@(SCREEN_WIDTH - 30 * kWidth_Scale));
         make.height.equalTo(@0.6);
         make.bottom.mas_equalTo(weakSelf.contentView);
-        
     }];
 
     

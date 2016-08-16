@@ -21,9 +21,7 @@
 		6F37CCFB1D52E1C4004E0BB0 /* VTMagicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37CCF11D52E1C4004E0BB0 /* VTMagicController.m */; };
 		6F37CCFC1D52E1C4004E0BB0 /* VTMagicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37CCF41D52E1C4004E0BB0 /* VTMagicView.m */; };
 		6F37CCFD1D52E1C4004E0BB0 /* VTMenuBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37CCF61D52E1C4004E0BB0 /* VTMenuBar.m */; };
-		6F3B06611D62C62600ACA36D /* MYPersonalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3B06601D62C62600ACA36D /* MYPersonalController.m */; };
 		6F3B06641D62DB0600ACA36D /* MYFunsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3B06631D62DB0600ACA36D /* MYFunsController.m */; };
-		6F3B06671D62DB9900ACA36D /* MYCoinController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3B06661D62DB9900ACA36D /* MYCoinController.m */; };
 		6F47AE181D5883D800407D06 /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F47AE171D5883D800407D06 /* search@2x.png */; };
 		6F4C05B41D51D4FE0019A870 /* MYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4C05AF1D51D4FE0019A870 /* MYLoginViewController.m */; };
 		6F4C05B51D51D4FE0019A870 /* MYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4C05B11D51D4FE0019A870 /* MYTabBar.m */; };
@@ -184,12 +182,8 @@
 		6F37CCF41D52E1C4004E0BB0 /* VTMagicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTMagicView.m; sourceTree = "<group>"; };
 		6F37CCF51D52E1C4004E0BB0 /* VTMenuBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTMenuBar.h; sourceTree = "<group>"; };
 		6F37CCF61D52E1C4004E0BB0 /* VTMenuBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTMenuBar.m; sourceTree = "<group>"; };
-		6F3B065F1D62C62600ACA36D /* MYPersonalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPersonalController.h; sourceTree = "<group>"; };
-		6F3B06601D62C62600ACA36D /* MYPersonalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPersonalController.m; sourceTree = "<group>"; };
 		6F3B06621D62DB0600ACA36D /* MYFunsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFunsController.h; sourceTree = "<group>"; };
 		6F3B06631D62DB0600ACA36D /* MYFunsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFunsController.m; sourceTree = "<group>"; };
-		6F3B06651D62DB9900ACA36D /* MYCoinController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCoinController.h; sourceTree = "<group>"; };
-		6F3B06661D62DB9900ACA36D /* MYCoinController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCoinController.m; sourceTree = "<group>"; };
 		6F47AE171D5883D800407D06 /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
 		6F4C05AE1D51D4FE0019A870 /* MYLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLoginViewController.h; sourceTree = "<group>"; };
 		6F4C05AF1D51D4FE0019A870 /* MYLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLoginViewController.m; sourceTree = "<group>"; };
@@ -591,8 +585,6 @@
 				6F8C5BA61D49B72E006B9980 /* MYEditController.m */,
 				6FF6F0ED1D61603E00130BEB /* MYFocusController.h */,
 				6FF6F0EE1D61603E00130BEB /* MYFocusController.m */,
-				6F3B06651D62DB9900ACA36D /* MYCoinController.h */,
-				6F3B06661D62DB9900ACA36D /* MYCoinController.m */,
 				6F3B06621D62DB0600ACA36D /* MYFunsController.h */,
 				6F3B06631D62DB0600ACA36D /* MYFunsController.m */,
 				6FF6F0F01D61648300130BEB /* MYSongController.h */,
@@ -607,8 +599,6 @@
 				6FF6F0FD1D616B4200130BEB /* MYFeedbackController.m */,
 				6FF6F1021D616B9900130BEB /* MYSettingController.h */,
 				6FF6F1031D616B9900130BEB /* MYSettingController.m */,
-				6F3B065F1D62C62600ACA36D /* MYPersonalController.h */,
-				6F3B06601D62C62600ACA36D /* MYPersonalController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1023,7 +1013,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F4C05B61D51D4FE0019A870 /* MYTabBarViewController.m in Sources */,
-				6F3B06611D62C62600ACA36D /* MYPersonalController.m in Sources */,
 				6F7FD27C1D473A1A00451F58 /* UIView+MYExtension.m in Sources */,
 				6FF6F10A1D61A81100130BEB /* MYLivingController.m in Sources */,
 				6F7FD1D41D4708E700451F58 /* ViewController.m in Sources */,
@@ -1047,7 +1036,6 @@
 				6F37CCF71D52E1C4004E0BB0 /* UIColor+Magic.m in Sources */,
 				6F7FD27F1D473B1B00451F58 /* MYHotController.m in Sources */,
 				04A6F6F11D52CB9D000E26DD /* MYHotCollectCell.m in Sources */,
-				6F3B06671D62DB9900ACA36D /* MYCoinController.m in Sources */,
 				6F37CCFD1D52E1C4004E0BB0 /* VTMenuBar.m in Sources */,
 				6FF6F0F21D61648300130BEB /* MYSongController.m in Sources */,
 				6F37CCFC1D52E1C4004E0BB0 /* VTMagicView.m in Sources */,
