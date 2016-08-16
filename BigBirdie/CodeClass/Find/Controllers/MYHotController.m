@@ -10,6 +10,8 @@
 #import "MYHotHeaderView.h"
 #import "MYHotCollectCell.h"
 #import "MYHotChartsView.h"
+#import "AFNetworking.h"
+#import "UIImageView+WebCache.h"
 
 @interface MYHotController ()<UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
@@ -17,6 +19,8 @@
 @property (nonatomic, strong) NSMutableArray * dataArr;
 @property (nonatomic, strong) MYHotHeaderView * headerView;
 
+
+@property (nonatomic,strong) NSMutableArray *arr;
 @end
 
 @implementation MYHotController
@@ -26,6 +30,22 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self createCollectionView];
     [self createChartsView];
+    
+    [self postLogin];
+    
+    self.arr = [NSMutableArray array];
+        [self.collectionView reloadData];
+    
+  
+    
+//    NSMutableArray *array = [NSMutableArray array];
+//    UIImageView *image = [[UIImageView alloc] init];
+//    for (NSString *str in self.arr) {
+//        [image sd_setImageWithURL:[NSURL URLWithString:str]];
+//        [array addObject:image];
+//    }
+    
+  
 }
 
 - (void)createChartsView {
@@ -54,6 +74,26 @@
     [_collectionView registerClass:[MYHotHeaderView  class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"MYHotHeaderViewId"];
 }
 
+- (void)postLogin {
+    NSString * urlStr = @"http://139.129.222.147/api/index/hot";
+   AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
+    [mgr GET:urlStr parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSLog(@">>>>>>>%@",responseObject);
+        NSDictionary *dic1 = responseObject;
+        NSDictionary *dic2 = dic1[@"data"];
+        NSArray *arr1 = dic2[@"adList"];
+        for (NSDictionary *dic in arr1) {
+          
+            [self.arr addObject:dic[@"path"]];
+        }
+        
+        NSLog(@"------%@",self.arr);
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        NSLog(@"%@",error);
+    }];
+
+}
+
 #pragma mark UICollectionViewDataSource代理方法
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     
@@ -75,6 +115,7 @@
            
             MYHotHeaderView * headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"MYHotHeaderViewId" forIndexPath:indexPath];
             self.headerView = headerView;
+            [self.headerView reloadWithImageUrlArray:self.arr];
             return headerView;
         }
     }
