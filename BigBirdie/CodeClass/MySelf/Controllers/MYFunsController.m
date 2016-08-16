@@ -1,22 +1,22 @@
 //
-//  MYFocusController.m
+//  MYFunsController.m
 //  BigBirdie
 //
-//  Created by 郭龙飞 on 16/8/15.
+//  Created by 郭龙飞 on 16/8/16.
 //  Copyright © 2016年 郭龙飞. All rights reserved.
 //
 
-#import "MYFocusController.h"
+#import "MYFunsController.h"
 
-@interface MYFocusController ()
+@interface MYFunsController ()
 
 @end
 
-@implementation MYFocusController
+@implementation MYFunsController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor grayColor];
+    self.view.backgroundColor = [UIColor redColor];
 }
 
 - (void)didReceiveMemoryWarning {

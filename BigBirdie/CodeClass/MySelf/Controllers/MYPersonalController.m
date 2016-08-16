@@ -1,22 +1,26 @@
 //
-//  MYFocusController.m
+//  MYPersonalController.m
 //  BigBirdie
 //
-//  Created by 郭龙飞 on 16/8/15.
+//  Created by 郭龙飞 on 16/8/16.
 //  Copyright © 2016年 郭龙飞. All rights reserved.
 //
 
-#import "MYFocusController.h"
 
-@interface MYFocusController ()
+
+
+//  个人主页
+#import "MYPersonalController.h"
+
+@interface MYPersonalController ()
 
 @end
 
-@implementation MYFocusController
+@implementation MYPersonalController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor grayColor];
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {

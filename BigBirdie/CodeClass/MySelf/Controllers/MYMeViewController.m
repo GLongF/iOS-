@@ -12,6 +12,11 @@
 #import "MYPhotoController.h"
 #import "MYEditController.h"
 
+#import "MYFocusController.h"
+#import "MYFunsController.h"
+#import "MYCoinController.h"
+
+
 #import "MYSongController.h"
 #import "MYCollectController.h"
 #import "MYHistoryController.h"
@@ -45,8 +50,10 @@
     // 数据源
     self.tableDataArry = @[@"我的声音",@"我的收藏",@"播放历史",@"账户中心",@"意见反馈",@"设置"].mutableCopy;
     self.tableImageArray = @[@"myVoice@2x.png",@"boxroom@2x.png",@"history@2x.png",@"acount@2x.png",@"suggest@2x.png",@"setting@2x.png"].mutableCopy;
+    self.headerView.backImage.userInteractionEnabled = YES;
 
-    
+    [self showMoreController];
+//    [self.headerView.focusButton addTarget:self action:@selector(showFocusController) forControlEvents:UIControlEventTouchUpInside];
 }
 
 
@@ -66,10 +73,25 @@
 
 
 #pragma mack - 关注  粉丝 试票
-- (void)showFocusController {
+- (void)showMoreController {
+    // 关注
     [[self.headerView.focusButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-        
+        MYFocusController *focusVC = [[MYFocusController alloc] init];
+        [self.navigationController pushViewController:focusVC animated:YES];
     }];
+    // 粉丝
+    [[self.headerView.funsButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        MYFunsController *funsVC = [[MYFunsController alloc] init];
+        [self.navigationController pushViewController:funsVC animated:YES];
+
+    }];
+    // 试票
+    [[self.headerView.coinButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        MYCoinController *coinVC = [[MYCoinController alloc] init];
+        [self.navigationController pushViewController:coinVC animated:YES];
+
+    }];
+
 }
 
 
@@ -169,15 +191,7 @@
             }
 
              break;
-        
-        case 6:
-            // code
-            break;
-        
-        case 7:
-            // code
-             break;
-        
+            
         default:
             break;
     }

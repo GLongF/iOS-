@@ -103,6 +103,7 @@
         make.top.mas_equalTo(weakSelf.nameLable.mas_bottom).offset(20 * kWidth_Scale);
         make.height.equalTo(@(14 * kWidth_Scale));
         make.centerX.equalTo(weakSelf.photoImage);
+        make.width.equalTo(@(30 * kWidth_Scale));
     }];
     
 
@@ -126,6 +127,7 @@
         make.top.mas_equalTo(weakSelf.nameLable.mas_bottom).offset(20 * kWidth_Scale);
         make.height.equalTo(@(14 * kWidth_Scale));
         make.right.mas_equalTo(weakSelf.funsButton.mas_left).offset( - 60 * kWidth_Scale);
+        make.width.equalTo(@(30 * kWidth_Scale));
     }];
     
     
@@ -144,13 +146,14 @@
 
     
     /******  大嘴币  ******/
-    self.praiseButton = [[UIButton alloc] init];
-    [self addButton:self.praiseButton Title:@"试币" font:LABLEA_FONT * kWidth_Scale colorString:@"#000000"];
-    [self.backImage addSubview:self.praiseButton];
-    [self.praiseButton mas_makeConstraints:^(MASConstraintMaker *make) {
+    self.coinButton = [[UIButton alloc] init];
+    [self addButton:self.coinButton Title:@"试币" font:LABLEA_FONT * kWidth_Scale colorString:@"#000000"];
+    [self.backImage addSubview:self.coinButton];
+    [self.coinButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(weakSelf.nameLable.mas_bottom).offset(20 * kWidth_Scale);
         make.height.equalTo(@(14 * kWidth_Scale));
         make.left.mas_equalTo(weakSelf.funsButton.mas_right).offset(60 * kWidth_Scale);
+        make.width.equalTo(@(30 * kWidth_Scale));
     }];
 
     
@@ -161,7 +164,7 @@
     [self.backImage addSubview:self.praiseLableB];
     [self.praiseLableB mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(weakSelf.funsButton.mas_bottom).offset(10 * kWidth_Scale);
-        make.centerX.equalTo(weakSelf.praiseButton);
+        make.centerX.equalTo(weakSelf.coinButton);
         make.height.equalTo(@(14* kWidth_Scale));
     }];
 

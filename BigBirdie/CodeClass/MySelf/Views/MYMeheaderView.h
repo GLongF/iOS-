@@ -28,8 +28,8 @@
 @property(nonatomic,strong) UIButton *focusButton;
 // 粉丝
 @property(nonatomic,strong) UIButton *funsButton;
-// 点赞
-@property(nonatomic,strong) UIButton *praiseButton;
+// 试票
+@property(nonatomic,strong) UIButton *coinButton;
 
 
 // 关注

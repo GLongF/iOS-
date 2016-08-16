@@ -1,22 +1,22 @@
 //
-//  MYFocusController.m
+//  MYCoinController.m
 //  BigBirdie
 //
-//  Created by 郭龙飞 on 16/8/15.
+//  Created by 郭龙飞 on 16/8/16.
 //  Copyright © 2016年 郭龙飞. All rights reserved.
 //
 
-#import "MYFocusController.h"
+#import "MYCoinController.h"
 
-@interface MYFocusController ()
+@interface MYCoinController ()
 
 @end
 
-@implementation MYFocusController
+@implementation MYCoinController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor grayColor];
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning {
