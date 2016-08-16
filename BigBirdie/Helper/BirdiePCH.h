@@ -24,4 +24,6 @@
 
 #define kWidth_Scale [UIScreen mainScreen].bounds.size.width / 414.0
 
+#define FONT(s) [UIFont systemFontOfSize:s]
+
 #endif /* BirdiePCH_h */

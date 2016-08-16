@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0404D2201D58266900E267E1 /* MYHotChartsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0404D21F1D58266900E267E1 /* MYHotChartsView.m */; };
+		046B00AB1D62CBD70003C43A /* MYSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B00A91D62CBD70003C43A /* MYSettingController.m */; };
+		046B00AF1D62CC6B0003C43A /* MYSettingCellFir.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B00AE1D62CC6B0003C43A /* MYSettingCellFir.m */; };
+		046B00B21D62CC7C0003C43A /* MYSettingCellSec.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B00B11D62CC7C0003C43A /* MYSettingCellSec.m */; };
+		046B00B51D62CC950003C43A /* MYSettingCellThi.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B00B41D62CC950003C43A /* MYSettingCellThi.m */; };
+		046B00B81D62CCAC0003C43A /* MYSettingCellFou.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B00B71D62CCAC0003C43A /* MYSettingCellFou.m */; };
+		046B00BB1D62CCF30003C43A /* MYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B00BA1D62CCF30003C43A /* MYTableViewCell.m */; };
 		04A6F6F11D52CB9D000E26DD /* MYHotCollectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6F6ED1D52CB9D000E26DD /* MYHotCollectCell.m */; };
 		04A6F6F21D52CB9D000E26DD /* MYHotCollectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A6F6EE1D52CB9D000E26DD /* MYHotCollectCell.xib */; };
 		04A6F6F31D52CB9D000E26DD /* MYHotHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6F6F01D52CB9D000E26DD /* MYHotHeaderView.m */; };
@@ -100,7 +106,6 @@
 		6FF6F0F81D616A5100130BEB /* MYHistoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF6F0F71D616A5100130BEB /* MYHistoryController.m */; };
 		6FF6F0FB1D616B1A00130BEB /* MYAccountController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF6F0FA1D616B1A00130BEB /* MYAccountController.m */; };
 		6FF6F0FE1D616B4200130BEB /* MYFeedbackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF6F0FD1D616B4200130BEB /* MYFeedbackController.m */; };
-		6FF6F1041D616B9900130BEB /* MYSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF6F1031D616B9900130BEB /* MYSettingController.m */; };
 		6FF6F1071D61A40500130BEB /* MYRecordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF6F1061D61A40500130BEB /* MYRecordController.m */; };
 		6FF6F10A1D61A81100130BEB /* MYLivingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF6F1091D61A81100130BEB /* MYLivingController.m */; };
 		6FFD9CBB1D4F176D00848282 /* WaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFD9CBA1D4F176D00848282 /* WaveView.m */; };
@@ -154,6 +159,18 @@
 /* Begin PBXFileReference section */
 		0404D21E1D58266900E267E1 /* MYHotChartsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYHotChartsView.h; sourceTree = "<group>"; };
 		0404D21F1D58266900E267E1 /* MYHotChartsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYHotChartsView.m; sourceTree = "<group>"; };
+		046B00A81D62CBD70003C43A /* MYSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSettingController.h; sourceTree = "<group>"; };
+		046B00A91D62CBD70003C43A /* MYSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSettingController.m; sourceTree = "<group>"; };
+		046B00AD1D62CC6B0003C43A /* MYSettingCellFir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSettingCellFir.h; sourceTree = "<group>"; };
+		046B00AE1D62CC6B0003C43A /* MYSettingCellFir.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSettingCellFir.m; sourceTree = "<group>"; };
+		046B00B01D62CC7C0003C43A /* MYSettingCellSec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSettingCellSec.h; sourceTree = "<group>"; };
+		046B00B11D62CC7C0003C43A /* MYSettingCellSec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSettingCellSec.m; sourceTree = "<group>"; };
+		046B00B31D62CC950003C43A /* MYSettingCellThi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSettingCellThi.h; sourceTree = "<group>"; };
+		046B00B41D62CC950003C43A /* MYSettingCellThi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSettingCellThi.m; sourceTree = "<group>"; };
+		046B00B61D62CCAC0003C43A /* MYSettingCellFou.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSettingCellFou.h; sourceTree = "<group>"; };
+		046B00B71D62CCAC0003C43A /* MYSettingCellFou.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSettingCellFou.m; sourceTree = "<group>"; };
+		046B00B91D62CCF30003C43A /* MYTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTableViewCell.h; sourceTree = "<group>"; };
+		046B00BA1D62CCF30003C43A /* MYTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTableViewCell.m; sourceTree = "<group>"; };
 		04A6F6EC1D52CB9D000E26DD /* MYHotCollectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYHotCollectCell.h; sourceTree = "<group>"; };
 		04A6F6ED1D52CB9D000E26DD /* MYHotCollectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYHotCollectCell.m; sourceTree = "<group>"; };
 		04A6F6EE1D52CB9D000E26DD /* MYHotCollectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYHotCollectCell.xib; sourceTree = "<group>"; };
@@ -296,8 +313,6 @@
 		6FF6F0FA1D616B1A00130BEB /* MYAccountController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYAccountController.m; sourceTree = "<group>"; };
 		6FF6F0FC1D616B4200130BEB /* MYFeedbackController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFeedbackController.h; sourceTree = "<group>"; };
 		6FF6F0FD1D616B4200130BEB /* MYFeedbackController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFeedbackController.m; sourceTree = "<group>"; };
-		6FF6F1021D616B9900130BEB /* MYSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSettingController.h; sourceTree = "<group>"; };
-		6FF6F1031D616B9900130BEB /* MYSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSettingController.m; sourceTree = "<group>"; };
 		6FF6F1051D61A40500130BEB /* MYRecordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYRecordController.h; sourceTree = "<group>"; };
 		6FF6F1061D61A40500130BEB /* MYRecordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYRecordController.m; sourceTree = "<group>"; };
 		6FF6F1081D61A81100130BEB /* MYLivingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLivingController.h; sourceTree = "<group>"; };
@@ -395,6 +410,8 @@
 				6F4C05B11D51D4FE0019A870 /* MYTabBar.m */,
 				6F4C05B21D51D4FE0019A870 /* MYTabBarViewController.h */,
 				6F4C05B31D51D4FE0019A870 /* MYTabBarViewController.m */,
+				046B00B91D62CCF30003C43A /* MYTableViewCell.h */,
+				046B00BA1D62CCF30003C43A /* MYTableViewCell.m */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -605,8 +622,8 @@
 				6FF6F0FA1D616B1A00130BEB /* MYAccountController.m */,
 				6FF6F0FC1D616B4200130BEB /* MYFeedbackController.h */,
 				6FF6F0FD1D616B4200130BEB /* MYFeedbackController.m */,
-				6FF6F1021D616B9900130BEB /* MYSettingController.h */,
-				6FF6F1031D616B9900130BEB /* MYSettingController.m */,
+				046B00A81D62CBD70003C43A /* MYSettingController.h */,
+				046B00A91D62CBD70003C43A /* MYSettingController.m */,
 				6F3B066B1D62EBA900ACA36D /* MYPersonalController.h */,
 				6F3B066C1D62EBA900ACA36D /* MYPersonalController.m */,
 			);
@@ -627,6 +644,14 @@
 				6F8C5BA01D49B713006B9980 /* MYMeheaderView.m */,
 				6F8C5BA11D49B713006B9980 /* MYMeCell.h */,
 				6F8C5BA21D49B713006B9980 /* MYMeCell.m */,
+				046B00AD1D62CC6B0003C43A /* MYSettingCellFir.h */,
+				046B00AE1D62CC6B0003C43A /* MYSettingCellFir.m */,
+				046B00B01D62CC7C0003C43A /* MYSettingCellSec.h */,
+				046B00B11D62CC7C0003C43A /* MYSettingCellSec.m */,
+				046B00B31D62CC950003C43A /* MYSettingCellThi.h */,
+				046B00B41D62CC950003C43A /* MYSettingCellThi.m */,
+				046B00B61D62CCAC0003C43A /* MYSettingCellFou.h */,
+				046B00B71D62CCAC0003C43A /* MYSettingCellFou.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1027,6 +1052,7 @@
 				6FF6F10A1D61A81100130BEB /* MYLivingController.m in Sources */,
 				6F7FD1D41D4708E700451F58 /* ViewController.m in Sources */,
 				6F37CCF81D52E1C4004E0BB0 /* UIScrollView+Magic.m in Sources */,
+				046B00BB1D62CCF30003C43A /* MYTableViewCell.m in Sources */,
 				6F8C5BB01D49B7E3006B9980 /* MYButton.m in Sources */,
 				6F8C5BAA1D49B72E006B9980 /* MYPhotoController.m in Sources */,
 				6FF6F0F51D61697700130BEB /* MYCollectController.m in Sources */,
@@ -1039,20 +1065,23 @@
 				0404D2201D58266900E267E1 /* MYHotChartsView.m in Sources */,
 				6F8C5BA31D49B714006B9980 /* MYMeheaderView.m in Sources */,
 				6FF6F0F81D616A5100130BEB /* MYHistoryController.m in Sources */,
+				046B00AF1D62CC6B0003C43A /* MYSettingCellFir.m in Sources */,
 				6FFD9CBE1D4F17E800848282 /* MYVoiceViewController.m in Sources */,
 				6F4C05B51D51D4FE0019A870 /* MYTabBar.m in Sources */,
 				04A6F6F31D52CB9D000E26DD /* MYHotHeaderView.m in Sources */,
 				6FF6F0FE1D616B4200130BEB /* MYFeedbackController.m in Sources */,
 				6F37CCF71D52E1C4004E0BB0 /* UIColor+Magic.m in Sources */,
+				046B00B81D62CCAC0003C43A /* MYSettingCellFou.m in Sources */,
 				6F7FD27F1D473B1B00451F58 /* MYHotController.m in Sources */,
 				04A6F6F11D52CB9D000E26DD /* MYHotCollectCell.m in Sources */,
+				046B00AB1D62CBD70003C43A /* MYSettingController.m in Sources */,
+				6F3B06671D62DB9900ACA36D /* MYCoinController.m in Sources */,
 				6F37CCFD1D52E1C4004E0BB0 /* VTMenuBar.m in Sources */,
 				6F3B06701D62EBBB00ACA36D /* MYCoinController.m in Sources */,
 				6FF6F0F21D61648300130BEB /* MYSongController.m in Sources */,
 				6F37CCFC1D52E1C4004E0BB0 /* VTMagicView.m in Sources */,
 				6F8C5BA41D49B714006B9980 /* MYMeCell.m in Sources */,
 				6F8C5BAD1D49B792006B9980 /* MYMeViewController.m in Sources */,
-				6FF6F1041D616B9900130BEB /* MYSettingController.m in Sources */,
 				6FF6F0FB1D616B1A00130BEB /* MYAccountController.m in Sources */,
 				6FF6F0EF1D61603E00130BEB /* MYFocusController.m in Sources */,
 				6F3B06641D62DB0600ACA36D /* MYFunsController.m in Sources */,
@@ -1060,6 +1089,8 @@
 				6F8C5BA91D49B72E006B9980 /* MYEditController.m in Sources */,
 				6F37CCF91D52E1C4004E0BB0 /* UIViewController+Magic.m in Sources */,
 				6F7FD2201D470B6C00451F58 /* MYFindControlle.m in Sources */,
+				046B00B51D62CC950003C43A /* MYSettingCellThi.m in Sources */,
+				046B00B21D62CC7C0003C43A /* MYSettingCellSec.m in Sources */,
 				6FF6F1071D61A40500130BEB /* MYRecordController.m in Sources */,
 				04A6F6F61D52DC52000E26DD /* UIColor+Hex.m in Sources */,
 				6F37CCFB1D52E1C4004E0BB0 /* VTMagicController.m in Sources */,

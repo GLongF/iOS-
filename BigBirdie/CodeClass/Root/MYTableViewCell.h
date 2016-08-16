@@ -1,5 +1,5 @@
 //
-//  MYSettingController.h
+//  MYTableViewCell.h
 //  BigBirdie
 //
 //  Created by mac on 16/8/16.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MYSettingController : UIViewController
+@interface MYTableViewCell : UITableViewCell
+
+- (void)setUpSubViews;
 
 @end
