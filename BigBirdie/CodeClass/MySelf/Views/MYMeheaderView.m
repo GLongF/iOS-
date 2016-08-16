@@ -200,7 +200,6 @@
     button.titleLabel.font = [UIFont systemFontOfSize:font];
     button.titleLabel.textAlignment = NSTextAlignmentCenter;
     [button setTitleColor:[UIColor colorWithHexString:colorStr] forState:UIControlStateNormal];
-
 }
 
 

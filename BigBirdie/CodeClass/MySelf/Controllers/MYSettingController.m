@@ -21,12 +21,6 @@
 
 @implementation MYSettingController
 
-- (NSMutableArray *)tableArray{
-    if(!_tableArray){
-        _tableArray = [[NSMutableArray alloc] init];
-    }
-    return _tableArray;
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

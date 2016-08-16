@@ -16,7 +16,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor grayColor];
+    self.navigationController.title = @"账户中心";
+    
+    [self setSegmentedController];
+   
+}
+
+- (void)setSegmentedController {
+    NSArray *items = @[@"充值",@"取现"];
+    UISegmentedControl *accountSC = [[UISegmentedControl alloc] initWithItems:items];
+    accountSC.selectedSegmentIndex = 0;
+    accountSC.frame = CGRectMake((SCREEN_WIDTH - 400 * kWidth_Scale) / 2, 64 + 10 * kWidth_Scale, 400 * kWidth_Scale, 60 * kWidth_Scale);
+    [accountSC addTarget:self action:@selector(accountSCClick:) forControlEvents:(UIControlEventValueChanged)];
+    [self.view addSubview:accountSC];
+
+}
+
+- (void)accountSCClick:(UISegmentedControl *)segment{
+    
 }
 
 - (void)didReceiveMemoryWarning {
