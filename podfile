@@ -8,5 +8,4 @@ pod 'AFNetworking'
 pod 'Masonry'
 pod 'ReactiveCocoa'
 pod 'UMengSocialCOM'
-pod 'SDWebImage'
 end

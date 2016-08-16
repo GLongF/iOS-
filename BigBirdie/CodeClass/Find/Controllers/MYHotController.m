@@ -34,7 +34,9 @@
     [self postLogin];
     
     self.arr = [NSMutableArray array];
-        [self.collectionView reloadData];
+   
+     [self.headerView reloadWithImageUrlArray:self.arr];
+     [self.collectionView reloadData];
     
   
     
@@ -83,10 +85,8 @@
         NSDictionary *dic2 = dic1[@"data"];
         NSArray *arr1 = dic2[@"adList"];
         for (NSDictionary *dic in arr1) {
-          
             [self.arr addObject:dic[@"path"]];
         }
-        
         NSLog(@"------%@",self.arr);
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"%@",error);
@@ -115,7 +115,7 @@
            
             MYHotHeaderView * headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"MYHotHeaderViewId" forIndexPath:indexPath];
             self.headerView = headerView;
-            [self.headerView reloadWithImageUrlArray:self.arr];
+           
             return headerView;
         }
     }

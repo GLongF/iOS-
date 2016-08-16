@@ -29,7 +29,7 @@
 
 - (void)createBannerViewWithFrame:(CGRect)frame {
     
-    _bannerView = [SDCycleScrollView cycleScrollViewWithFrame:frame delegate:self placeholderImage:nil];
+    _bannerView = [SDCycleScrollView cycleScrollViewWithFrame:frame delegate:self placeholderImage:[UIImage imageNamed:@"1.jpg"]];
     [self addSubview:_bannerView];
 }
                    
