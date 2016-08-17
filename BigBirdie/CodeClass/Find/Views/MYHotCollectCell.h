@@ -10,4 +10,6 @@
 
 @interface MYHotCollectCell : UICollectionViewCell
 
+
+
 @end

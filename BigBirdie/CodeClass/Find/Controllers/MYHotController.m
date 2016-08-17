@@ -34,18 +34,8 @@
     [self postLogin];
     
     self.arr = [NSMutableArray array];
-   
-     [self.headerView reloadWithImageUrlArray:self.arr];
-     [self.collectionView reloadData];
     
-  
-    
-//    NSMutableArray *array = [NSMutableArray array];
-//    UIImageView *image = [[UIImageView alloc] init];
-//    for (NSString *str in self.arr) {
-//        [image sd_setImageWithURL:[NSURL URLWithString:str]];
-//        [array addObject:image];
-//    }
+    NSLog(@"1234455");
     
   
 }
@@ -88,6 +78,8 @@
             [self.arr addObject:dic[@"path"]];
         }
         NSLog(@"------%@",self.arr);
+        
+        [self.collectionView reloadData];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"%@",error);
     }];
@@ -107,6 +99,8 @@
     return cell;
 }
 
+
+#pragma mark   创建headerView 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
     
     if (indexPath.section == 0) {
@@ -115,7 +109,7 @@
            
             MYHotHeaderView * headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"MYHotHeaderViewId" forIndexPath:indexPath];
             self.headerView = headerView;
-           
+           [self.headerView reloadWithImageUrlArray:self.arr];
             return headerView;
         }
     }
