@@ -14,6 +14,7 @@
 		046B00B51D62CC950003C43A /* MYSettingCellThi.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B00B41D62CC950003C43A /* MYSettingCellThi.m */; };
 		046B00B81D62CCAC0003C43A /* MYSettingCellFou.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B00B71D62CCAC0003C43A /* MYSettingCellFou.m */; };
 		046B00BB1D62CCF30003C43A /* MYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B00BA1D62CCF30003C43A /* MYTableViewCell.m */; };
+		04A383891D64043100493CC6 /* BaseHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A383881D64043100493CC6 /* BaseHttpManager.m */; };
 		04A6F6F11D52CB9D000E26DD /* MYHotCollectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6F6ED1D52CB9D000E26DD /* MYHotCollectCell.m */; };
 		04A6F6F21D52CB9D000E26DD /* MYHotCollectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A6F6EE1D52CB9D000E26DD /* MYHotCollectCell.xib */; };
 		04A6F6F31D52CB9D000E26DD /* MYHotHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6F6F01D52CB9D000E26DD /* MYHotHeaderView.m */; };
@@ -174,6 +175,9 @@
 		046B00B71D62CCAC0003C43A /* MYSettingCellFou.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSettingCellFou.m; sourceTree = "<group>"; };
 		046B00B91D62CCF30003C43A /* MYTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTableViewCell.h; sourceTree = "<group>"; };
 		046B00BA1D62CCF30003C43A /* MYTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTableViewCell.m; sourceTree = "<group>"; };
+		04A383861D63F71100493CC6 /* RequestURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestURL.h; sourceTree = "<group>"; };
+		04A383871D64043100493CC6 /* BaseHttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseHttpManager.h; sourceTree = "<group>"; };
+		04A383881D64043100493CC6 /* BaseHttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseHttpManager.m; sourceTree = "<group>"; };
 		04A6F6EC1D52CB9D000E26DD /* MYHotCollectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYHotCollectCell.h; sourceTree = "<group>"; };
 		04A6F6ED1D52CB9D000E26DD /* MYHotCollectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYHotCollectCell.m; sourceTree = "<group>"; };
 		04A6F6EE1D52CB9D000E26DD /* MYHotCollectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYHotCollectCell.xib; sourceTree = "<group>"; };
@@ -384,6 +388,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04A383851D63F6EF00493CC6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				04A383861D63F71100493CC6 /* RequestURL.h */,
+				04A383871D64043100493CC6 /* BaseHttpManager.h */,
+				04A383881D64043100493CC6 /* BaseHttpManager.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		6F37CCE41D52E1C4004E0BB0 /* VTMagic */ = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +469,7 @@
 		6F7FD1CB1D4708E700451F58 /* BigBirdie */ = {
 			isa = PBXGroup;
 			children = (
+				04A383851D63F6EF00493CC6 /* Network */,
 				6F7FD2281D470DF300451F58 /* pictures */,
 				6F7FD2071D4709D500451F58 /* CodeClass */,
 				6F7FD2081D4709D500451F58 /* Helper */,
@@ -1087,6 +1102,7 @@
 				6FF6F0FE1D616B4200130BEB /* MYFeedbackController.m in Sources */,
 				6F37CCF71D52E1C4004E0BB0 /* UIColor+Magic.m in Sources */,
 				046B00B81D62CCAC0003C43A /* MYSettingCellFou.m in Sources */,
+				04A383891D64043100493CC6 /* BaseHttpManager.m in Sources */,
 				6F7FD27F1D473B1B00451F58 /* MYHotController.m in Sources */,
 				04A6F6F11D52CB9D000E26DD /* MYHotCollectCell.m in Sources */,
 				046B00AB1D62CBD70003C43A /* MYSettingController.m in Sources */,
