@@ -21,6 +21,7 @@
 		04A6F6F61D52DC52000E26DD /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6F6F51D52DC52000E26DD /* UIColor+Hex.m */; };
 		04BB3D401D5C2A130059EC4A /* MYAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BB3D3F1D5C2A130059EC4A /* MYAudioPlayer.m */; };
 		132DDD59A516CE46C3ED7A17 /* Pods_BigBirdie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A70F71BB0A7AF9835FEC67C /* Pods_BigBirdie.framework */; };
+		6F2E9D561D647EAA0086A6BE /* MYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2E9D551D647EAA0086A6BE /* MYBaseViewController.m */; };
 		6F37CCF71D52E1C4004E0BB0 /* UIColor+Magic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37CCE61D52E1C4004E0BB0 /* UIColor+Magic.m */; };
 		6F37CCF81D52E1C4004E0BB0 /* UIScrollView+Magic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37CCE81D52E1C4004E0BB0 /* UIScrollView+Magic.m */; };
 		6F37CCF91D52E1C4004E0BB0 /* UIViewController+Magic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37CCEA1D52E1C4004E0BB0 /* UIViewController+Magic.m */; };
@@ -190,6 +191,8 @@
 		1B84AB1301579B37D131341E /* Pods-BigBirdie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigBirdie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BigBirdie/Pods-BigBirdie.debug.xcconfig"; sourceTree = "<group>"; };
 		1E2190FB79119F85681A6798 /* Pods-BigBirdie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigBirdie.release.xcconfig"; path = "Pods/Target Support Files/Pods-BigBirdie/Pods-BigBirdie.release.xcconfig"; sourceTree = "<group>"; };
 		5A70F71BB0A7AF9835FEC67C /* Pods_BigBirdie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BigBirdie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F2E9D541D647EAA0086A6BE /* MYBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBaseViewController.h; sourceTree = "<group>"; };
+		6F2E9D551D647EAA0086A6BE /* MYBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBaseViewController.m; sourceTree = "<group>"; };
 		6F37CCE51D52E1C4004E0BB0 /* UIColor+Magic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Magic.h"; sourceTree = "<group>"; };
 		6F37CCE61D52E1C4004E0BB0 /* UIColor+Magic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Magic.m"; sourceTree = "<group>"; };
 		6F37CCE71D52E1C4004E0BB0 /* UIScrollView+Magic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Magic.h"; sourceTree = "<group>"; };
@@ -434,6 +437,8 @@
 				6F4C05B31D51D4FE0019A870 /* MYTabBarViewController.m */,
 				046B00B91D62CCF30003C43A /* MYTableViewCell.h */,
 				046B00BA1D62CCF30003C43A /* MYTableViewCell.m */,
+				6F2E9D541D647EAA0086A6BE /* MYBaseViewController.h */,
+				6F2E9D551D647EAA0086A6BE /* MYBaseViewController.m */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -1101,6 +1106,7 @@
 				04A6F6F31D52CB9D000E26DD /* MYHotHeaderView.m in Sources */,
 				6FF6F0FE1D616B4200130BEB /* MYFeedbackController.m in Sources */,
 				6F37CCF71D52E1C4004E0BB0 /* UIColor+Magic.m in Sources */,
+				6F2E9D561D647EAA0086A6BE /* MYBaseViewController.m in Sources */,
 				046B00B81D62CCAC0003C43A /* MYSettingCellFou.m in Sources */,
 				04A383891D64043100493CC6 /* BaseHttpManager.m in Sources */,
 				6F7FD27F1D473B1B00451F58 /* MYHotController.m in Sources */,

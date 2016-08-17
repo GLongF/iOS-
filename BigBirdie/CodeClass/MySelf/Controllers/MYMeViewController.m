@@ -146,6 +146,7 @@
             {
                 MYSongController *songVC = [[MYSongController alloc]init];
                 songVC.title = @"我的声音";
+                songVC.hidesBottomBarWhenPushed  = YES;
                 [self.navigationController pushViewController:songVC animated:YES];
             }
             break;

@@ -27,4 +27,6 @@
 
 #define FONT(s) [UIFont systemFontOfSize:s]
 
+#define BASE_URL @"www.baidu.com"
+
 #endif /* BirdiePCH_h */
