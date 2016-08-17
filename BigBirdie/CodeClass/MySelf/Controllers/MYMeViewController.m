@@ -146,7 +146,7 @@
             {
                 MYSongController *songVC = [[MYSongController alloc]init];
                 songVC.title = @"我的声音";
-                songVC.hidesBottomBarWhenPushed  = YES;
+                [songVC setHidesBottomBarWhenPushed:YES];
                 [self.navigationController pushViewController:songVC animated:YES];
             }
             break;
@@ -155,6 +155,7 @@
             {
               MYCollectController *collectVC = [[MYCollectController alloc]init];
                 collectVC.title = @"我的收藏";
+                [collectVC setHidesBottomBarWhenPushed:YES];
                 [self.navigationController pushViewController:collectVC animated:YES];
             }
             break;
@@ -164,6 +165,7 @@
             {
                 MYHistoryController *historyVC = [[MYHistoryController alloc]init];
                 historyVC.title = @"播放历史";
+                [historyVC setHidesBottomBarWhenPushed:YES];
                 [self.navigationController pushViewController:historyVC animated:YES];
             }
             break;
@@ -172,6 +174,7 @@
             {
                 MYAccountController *accountVC = [[MYAccountController alloc]init];
                 accountVC.title = @"账户中心";
+                [accountVC setHidesBottomBarWhenPushed:YES];
                 [self.navigationController pushViewController:accountVC animated:YES];
             }
              break;
@@ -180,6 +183,7 @@
             {
                 MYFeedbackController *feedbackVC = [[MYFeedbackController alloc]init];
                 feedbackVC.title = @"意见反馈";
+                [feedbackVC setHidesBottomBarWhenPushed:YES];
                 [self.navigationController pushViewController:feedbackVC animated:YES];
             }
             break;
@@ -188,6 +192,8 @@
             {
                 MYSettingController *settingVC = [[MYSettingController alloc]init];
                 settingVC.title = @"设置";
+                
+                [settingVC setHidesBottomBarWhenPushed:YES];
                 [self.navigationController pushViewController:settingVC animated:YES];
             }
 

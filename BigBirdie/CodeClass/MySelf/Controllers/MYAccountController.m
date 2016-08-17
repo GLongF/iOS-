@@ -35,7 +35,7 @@
 }
 
 - (void)setSegmentedController {
-    NSArray *items = @[@"充值",@"取现"];
+    NSArray *items = @[@"充值",@"提现"];
     UISegmentedControl *accountSC = [[UISegmentedControl alloc] initWithItems:items];
     accountSC.selectedSegmentIndex = 0;
     accountSC.tintColor= [UIColor yellowColor];
