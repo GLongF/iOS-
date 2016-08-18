@@ -22,6 +22,8 @@
 		04BB3D401D5C2A130059EC4A /* MYAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BB3D3F1D5C2A130059EC4A /* MYAudioPlayer.m */; };
 		132DDD59A516CE46C3ED7A17 /* Pods_BigBirdie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A70F71BB0A7AF9835FEC67C /* Pods_BigBirdie.framework */; };
 		6F2E9D561D647EAA0086A6BE /* MYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2E9D551D647EAA0086A6BE /* MYBaseViewController.m */; };
+		6F2E9D591D654E8E0086A6BE /* MYRechargeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2E9D581D654E8E0086A6BE /* MYRechargeView.m */; };
+		6F2E9D5C1D654ED80086A6BE /* MYEarningsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2E9D5B1D654ED80086A6BE /* MYEarningsView.m */; };
 		6F37CCF71D52E1C4004E0BB0 /* UIColor+Magic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37CCE61D52E1C4004E0BB0 /* UIColor+Magic.m */; };
 		6F37CCF81D52E1C4004E0BB0 /* UIScrollView+Magic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37CCE81D52E1C4004E0BB0 /* UIScrollView+Magic.m */; };
 		6F37CCF91D52E1C4004E0BB0 /* UIViewController+Magic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37CCEA1D52E1C4004E0BB0 /* UIViewController+Magic.m */; };
@@ -193,6 +195,10 @@
 		5A70F71BB0A7AF9835FEC67C /* Pods_BigBirdie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BigBirdie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F2E9D541D647EAA0086A6BE /* MYBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBaseViewController.h; sourceTree = "<group>"; };
 		6F2E9D551D647EAA0086A6BE /* MYBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBaseViewController.m; sourceTree = "<group>"; };
+		6F2E9D571D654E8E0086A6BE /* MYRechargeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MYRechargeView.h; path = ../Controllers/MYRechargeView.h; sourceTree = "<group>"; };
+		6F2E9D581D654E8E0086A6BE /* MYRechargeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MYRechargeView.m; path = ../Controllers/MYRechargeView.m; sourceTree = "<group>"; };
+		6F2E9D5A1D654ED80086A6BE /* MYEarningsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MYEarningsView.h; path = ../Controllers/MYEarningsView.h; sourceTree = "<group>"; };
+		6F2E9D5B1D654ED80086A6BE /* MYEarningsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MYEarningsView.m; path = ../Controllers/MYEarningsView.m; sourceTree = "<group>"; };
 		6F37CCE51D52E1C4004E0BB0 /* UIColor+Magic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Magic.h"; sourceTree = "<group>"; };
 		6F37CCE61D52E1C4004E0BB0 /* UIColor+Magic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Magic.m"; sourceTree = "<group>"; };
 		6F37CCE71D52E1C4004E0BB0 /* UIScrollView+Magic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Magic.h"; sourceTree = "<group>"; };
@@ -685,6 +691,10 @@
 				6F3B06761D62F28400ACA36D /* MYPersonalHeaderView.xib */,
 				6F3B06781D62F88E00ACA36D /* MYPersonalCell.h */,
 				6F3B06791D62F88E00ACA36D /* MYPersonalCell.m */,
+				6F2E9D571D654E8E0086A6BE /* MYRechargeView.h */,
+				6F2E9D581D654E8E0086A6BE /* MYRechargeView.m */,
+				6F2E9D5A1D654ED80086A6BE /* MYEarningsView.h */,
+				6F2E9D5B1D654ED80086A6BE /* MYEarningsView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1088,6 +1098,7 @@
 				6F3B06731D62F13300ACA36D /* MYPersonalHeaderView.m in Sources */,
 				6F37CCF81D52E1C4004E0BB0 /* UIScrollView+Magic.m in Sources */,
 				046B00BB1D62CCF30003C43A /* MYTableViewCell.m in Sources */,
+				6F2E9D5C1D654ED80086A6BE /* MYEarningsView.m in Sources */,
 				6F8C5BB01D49B7E3006B9980 /* MYButton.m in Sources */,
 				6F8C5BAA1D49B72E006B9980 /* MYPhotoController.m in Sources */,
 				6FF6F0F51D61697700130BEB /* MYCollectController.m in Sources */,
@@ -1104,6 +1115,7 @@
 				6FFD9CBE1D4F17E800848282 /* MYVoiceViewController.m in Sources */,
 				6F4C05B51D51D4FE0019A870 /* MYTabBar.m in Sources */,
 				04A6F6F31D52CB9D000E26DD /* MYHotHeaderView.m in Sources */,
+				6F2E9D591D654E8E0086A6BE /* MYRechargeView.m in Sources */,
 				6FF6F0FE1D616B4200130BEB /* MYFeedbackController.m in Sources */,
 				6F37CCF71D52E1C4004E0BB0 /* UIColor+Magic.m in Sources */,
 				6F2E9D561D647EAA0086A6BE /* MYBaseViewController.m in Sources */,

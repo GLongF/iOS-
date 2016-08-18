@@ -64,6 +64,7 @@
     //注册
     [_collectionView registerNib:[UINib nibWithNibName:@"MYHotCollectCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"MYHotCollectCellId"];
     [_collectionView registerClass:[MYHotHeaderView  class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"MYHotHeaderViewId"];
+
 }
 
 - (void)postLogin {

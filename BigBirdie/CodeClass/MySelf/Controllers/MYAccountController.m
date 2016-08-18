@@ -7,10 +7,13 @@
 //
 
 #import "MYAccountController.h"
-
+#import "MYRechargeView.h"
+#import "MYEarningsView.h"
 
 @interface MYAccountController ()
-@property (nonatomic,strong) UIScrollView * scrollView;
+@property (nonatomic,strong) UITableView *tableView;
+@property (nonatomic,strong) MYRechargeView *rechargeView; // 充值
+@property (nonatomic,strong) MYEarningsView *earningsView; // 取现
 @end
 
 @implementation MYAccountController
@@ -21,16 +24,14 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor grayColor];
     self.navigationController.title = @"账户中心";
-    
-    
-    self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 64 + 80 * kWidth_Scale,SCREEN_WIDTH , SCREEN_HEIGHT - (64 + 80 * kWidth_Scale))];
-    self.scrollView.backgroundColor = [UIColor redColor];
-    self.scrollView.contentSize = CGSizeMake(SCREEN_WIDTH * 2, SCREEN_HEIGHT - (64 + 80 * kWidth_Scale));
-    self.scrollView.bounces = NO;
-    self.scrollView.scrollEnabled = NO;
-    [self.view addSubview:self.scrollView];
-    
     [self setSegmentedController];
+    
+    self.rechargeView = [[MYRechargeView alloc] initWithFrame:CGRectMake((SCREEN_WIDTH - 400 * kWidth_Scale) / 2, 64 + 80 * kWidth_Scale, 400 * kWidth_Scale , SCREEN_HEIGHT - (64 + 80 * kWidth_Scale))];
+    [self.view addSubview:self.rechargeView];
+    
+    self.earningsView = [[MYEarningsView alloc] initWithFrame:CGRectMake((SCREEN_WIDTH - 400 * kWidth_Scale) / 2, 64 + 80 * kWidth_Scale, 400 * kWidth_Scale , SCREEN_HEIGHT - (64 + 80 * kWidth_Scale))];
+    
+    
     
 }
 
@@ -44,27 +45,18 @@
     [self.view addSubview:accountSC];
     
     
-
 }
 
 - (void)accountSCClick:(UISegmentedControl *)segment{
     switch (segment.selectedSegmentIndex) {
         case 0:
-//            [UIView animateWithDuration:1.0 // 动画时长
-//                             animations:^{
-            
-//                             }];
-
+            [self.earningsView removeFromSuperview];
+            [self.view addSubview:self.rechargeView];
             break;
             
        case 1:
-            
-            [UIView animateWithDuration:1.0 // 动画时长
-                             animations:^{
-                                 
-                                 
-                             }];
-
+            [self.rechargeView removeFromSuperview];
+            [self.view addSubview:self.earningsView];
             break;
             
         default:
