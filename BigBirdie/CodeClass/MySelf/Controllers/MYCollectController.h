@@ -1,5 +1,5 @@
 //
-//  MYCollectController.h
+//  MYSongController.h
 //  BigBirdie
 //
 //  Created by 郭龙飞 on 16/8/15.
